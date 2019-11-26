@@ -2103,11 +2103,6 @@
       outline-color: #222;
     }
 
-    .amp-carousel-button-next,
-    .amp-carousel-button-prev {
-      display: none;
-    }
-
     .ampstart-pullquote {
       font-size: 2.2rem;
       margin: 1.5rem 0 1rem;
@@ -3112,6 +3107,21 @@
 
     i.fa.fa-angle-down.right{
       padding-top: 4px;
+    }
+    
+      .amp-carousel-button .amp-carousel-button-prev {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 999;
+      background-color:rgba(0, 0, 0, 0.1);  
+    }
+    .amp-carousel-button .amp-carousel-button-next {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: 999;
+      background-color:rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
