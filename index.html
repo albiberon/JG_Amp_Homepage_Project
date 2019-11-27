@@ -11,14 +11,16 @@
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
   <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
   <link rel="icon" type="image/x-icon" href="https://www.junglegym.com/media/favicon/default/favicon.jpg" />
   <link rel="shortcut icon" type="image/x-icon" href="https://www.junglegym.com/media/favicon/default/favicon.jpg" />
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
 
-  <meta name="description" content="The original Jungle Gym wooden playground equipment. Robust, sustainable PEFC pine timber. GS awarded. Most complete and safe climbing frames for kids.">
+  <meta name="description"
+    content="The original Jungle Gym wooden playground equipment. Robust, sustainable PEFC pine timber. GS awarded. Most complete and safe climbing frames for kids.">
   <meta name="keywords" content="Wooden climbing frames for your garden, playhouses, swings, slides">
   <meta name="robots" content="INDEX,FOLLOW">
   <meta name="title" content="Wooden playground equipment for your garden | Jungle Gym®">
@@ -31,7 +33,9 @@
   <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
   <style amp-boilerplate>
     body {
@@ -676,7 +680,7 @@
 
     body {
       background: #fff;
-      color: #222;
+      color: #333;
       font-family: Open Sans, serif;
       min-width: 315px;
       overflow-x: hidden;
@@ -1666,7 +1670,7 @@
     }
 
     .commerce-hero-content {
-      padding: 3rem 1.5rem;
+      padding: 3rem .5rem;
     }
 
     .amp-mode-mouse .commerce-hero-image {
@@ -1681,7 +1685,6 @@
       font-family: Open Sans, serif;
       font-size: 1.4em;
       width: 100%;
-      max-width: 500px;
       font-weight: 300;
       margin: 0 auto;
     }
@@ -1865,17 +1868,12 @@
       border-top: 1px solid #f3f3f3;
     }
 
-    .commerce-related-products .amp-carousel-button {
-      background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/><path d="M0-.5h24v24H0z" fill="none"/></svg>') 30px 30px transparent;
-      cursor: pointer;
-      height: 30px;
-      width: 30px;
-      top: 40%;
-    }
+
 
     .commerce-related-products .amp-carousel-button-next,
     .commerce-related-products .amp-carousel-button-prev {
       display: initial;
+
     }
 
     .commerce-related-products .amp-carousel-button-prev {
@@ -1908,7 +1906,9 @@
     }
 
     .usp-container {
+      padding-left: 30px;
       margin-bottom: -50px;
+      font-weight:300;
     }
 
     .carousel-usb {
@@ -1916,7 +1916,7 @@
     }
 
     .shop-now-button {
-      background-color: rgb(78, 196, 37);
+      background-color: rgb(34, 134, 0);
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
       border-top-left-radius: 4px;
@@ -1998,18 +1998,6 @@
         display: flex;
       }
     }
-
-    div.swipe-left-button {
-      position: absolute;
-      left: 0;
-      margin-top: -40px;
-      width: 65px;
-      min-width: min-content;
-      padding: 30px 18px 30px 5px;
-      z-index: 99999;
-      border-radius: 0 50% 50% 0;
-    }
-
 
     .control {
       display: inline-block;
@@ -2174,7 +2162,7 @@
       color: #333;
     }
 
-    #h22 {
+    #h22,#h23,#h24 {
       cursor: pointer;
       background-color: #f5f5f5;
       padding-right: 20px;
@@ -2470,23 +2458,132 @@
       text-align: center;
     }
 
-    i.fa.fa-angle-down.right{
+    i.fa.fa-angle-down.right {
       padding-top: 4px;
     }
-    
-      .amp-carousel-button .amp-carousel-button-prev {
+
+    .amp-carousel-button .amp-carousel-button-prev {
       position: absolute;
       top: 50%;
       left: 0;
       z-index: 999;
-      background-color:rgba(0, 0, 0, 0.1);  
+      background-color: rgba(0, 0, 0, 0.1);
     }
+
     .amp-carousel-button .amp-carousel-button-next {
       position: absolute;
       top: 50%;
       right: 0;
       z-index: 999;
-      background-color:rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .amp-carousel-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #4ec42587;
+    }
+
+    .client-review-text {
+      font-size: 18px;
+      letter-spacing: 1.1px;
+      font-weight: 300;
+      padding: 0 8px 0 8px;
+    }
+
+    #reviews-carousel .amp-carousel-button {
+      display: none;
+    }
+
+    .fa.fa-quote-left.fa-2x {
+      position: absolute;
+      left: 5px;
+    }
+
+    .fa.fa-quote-right.fa-2x {
+      position: absolute;
+      right: 5px;
+    }
+
+    .number-statistics {
+      padding: 10px 0 0 0;
+      font-size: 65px;
+      letter-spacing: 1.1px;
+      color: #282828;
+      text-align: center;
+      font-family: Open Sans, sans-serif;
+      font-weight: 300;
+    }
+
+    @media (min-width : 300px) {
+      #reviews-carousel {
+        height: 520px;
+      }
+    }
+
+    @media (min-width : 411px) {
+      #reviews-carousel {
+        height: 450px;
+      }
+    }
+
+    @media (min-width : 768px) {
+      #reviews-carousel {
+        height: 350px;
+      }
+    }
+
+    @media (min-width : 900px) {
+      #reviews-carousel {
+        height: 330px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      border: unset;
+    }
+
+    .prefooter {
+      padding: 25px 0 35px 0;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    .prefooter .col-2 {
+      color: #333;
+      font-weight: 400;
+    }
+
+    .page-footer {
+      padding: 10px 0;
+      background-color: #273443;
+    }
+
+    .footer-accordion section h4,
+    .social-section h4 {
+      background-color: unset;
+      color: white;
+      font-size: 18px;
+      border: unset;
+      padding: 10px 0;
+      font-weight: 400;
+    }
+
+    .social-section h4 {
+      padding-top: 5px;
+    }
+
+    .top-usb-section {
+      padding-top: 15px;
+    }
+
+    #social-media-icons {
+      padding-left: 0;
     }
   </style>
 </head>
@@ -2503,48 +2600,64 @@
             <h2 class="px2 pb1" id="h22">Climbing Frames & Play houses<i class="fa fa-angle-down right"
                 aria-hidden="true"></i></h2>
             <ul class="list-style-none px2">
-              <li><a href="https://www.junglegym.com/climbing-frames-playhouses" class="text-decoration-none">All climbing Frames & Play
+              <li><a href="https://www.junglegym.com/climbing-frames-playhouses" class="text-decoration-none">All
+                  climbing Frames & Play
                   houses</a></li>
               <li><a href="https://www.junglegym.com/climbing-frames-playhouses/playhouses"
                   class="text-decoration-none">Playhouses</a></li>
-              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/swing" class="text-decoration-none">Swing</a></li>
-              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/climb" class="text-decoration-none">Climb</a></li>
-              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/playtowers" class="text-decoration-none">Playtowers</a></li>
-              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/playparadises" class="text-decoration-none">Playparadises</a></li>
-              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/train-boat" class="text-decoration-none">Train & Boat</a></li>
-              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/bridge" class="text-decoration-none">Bridge</a></li>
+              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/swing"
+                  class="text-decoration-none">Swing</a></li>
+              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/climb"
+                  class="text-decoration-none">Climb</a></li>
+              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/playtowers"
+                  class="text-decoration-none">Playtowers</a></li>
+              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/playparadises"
+                  class="text-decoration-none">Playparadises</a></li>
+              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/train-boat"
+                  class="text-decoration-none">Train & Boat</a></li>
+              <li><a href="https://www.junglegym.com/climbing-frames-playhouses/bridge"
+                  class="text-decoration-none">Bridge</a></li>
             </ul>
           </section>
         </amp-accordion>
-        <p class="px2 py1 pt2"><a href="https://www.junglegym.com/design-your-own"
-            class="text-decoration-none">Design Your Own</a></p>
+        <p class="px2 py1 pt2"><a href="https://www.junglegym.com/design-your-own" class="text-decoration-none">Design
+            Your Own</a></p>
         <amp-accordion disable-session-states>
           <section>
-            <h2 id="h22" class="px2 pb1">Accessories<i class="fa fa-angle-down right" aria-hidden="true"></i></h2>
+            <h2 id="h23" class="px2 pb1">Accessories<i class="fa fa-angle-down right" aria-hidden="true"></i></h2>
 
             <ul class="list-style-none px2">
               <li><a href="https://www.junglegym.com/accessories" class="text-decoration-none">All Accessories</a></li>
-              <li><a href="https://www.junglegym.com/accessories/swing-accessories" class="text-decoration-none">Swings</a></li>
-              <li><a href="https://www.junglegym.com/accessories/modules" class="text-decoration-none">Extension modules</a></li>
+              <li><a href="https://www.junglegym.com/accessories/swing-accessories"
+                  class="text-decoration-none">Swings</a></li>
+              <li><a href="https://www.junglegym.com/accessories/modules" class="text-decoration-none">Extension
+                  modules</a></li>
               <li><a href="https://www.junglegym.com/accessories/slides" class="text-decoration-none">Slides</a></li>
               <li><a href="https://www.junglegym.com/accessories/kits" class="text-decoration-none">Kits</a></li>
               <li><a href="https://www.junglegym.com/accessories/links" class="text-decoration-none">Links</a></li>
-              <li><a href="https://www.junglegym.com/accessories/spare-parts" class="text-decoration-none">Spare parts</a></li>
-              <li><a href="https://www.junglegym.com/webshop/other-accessories" class="text-decoration-none">Other accessories</a></li>
+              <li><a href="https://www.junglegym.com/accessories/spare-parts" class="text-decoration-none">Spare
+                  parts</a></li>
+              <li><a href="https://www.junglegym.com/webshop/other-accessories" class="text-decoration-none">Other
+                  accessories</a></li>
             </ul>
           </section>
         </amp-accordion>
-      <amp-accordion>
+        <amp-accordion>
           <section>
-              <h2 id="h22" class="px2 pb1">Commercial Climbing Frames<i class="fa fa-angle-down right" aria-hidden="true"></i></h2>
-  
-              <ul class="list-style-none px2">
-                <li><a href="https://www.junglegym.com/commercial-climbing-frames" class="text-decoration-none">All Commercial Climbing Frames</a></li>
-                <li><a href="https://www.junglegym.com/commercial-climbing-frames/climbing-frames" class="text-decoration-none">Climbing Frames</a></li>
-                <li><a href="https://www.junglegym.com/commercial-climbing-frames/swings" class="text-decoration-none">Swings</a></li>
-                <li><a href="https://www.junglegym.com/commercial-climbing-frames/professional-accessories" class="text-decoration-none">Professional Accessories</a></li>
-              </ul>
-            </section>
+            <h2 id="h24" class="px2 pb1">Commercial Climbing Frames<i class="fa fa-angle-down right"
+                aria-hidden="true"></i></h2>
+
+            <ul class="list-style-none px2">
+              <li><a href="https://www.junglegym.com/commercial-climbing-frames" class="text-decoration-none">All
+                  Commercial Climbing Frames</a></li>
+              <li><a href="https://www.junglegym.com/commercial-climbing-frames/climbing-frames"
+                  class="text-decoration-none">Climbing Frames</a></li>
+              <li><a href="https://www.junglegym.com/commercial-climbing-frames/swings"
+                  class="text-decoration-none">Swings</a></li>
+              <li><a href="https://www.junglegym.com/commercial-climbing-frames/professional-accessories"
+                  class="text-decoration-none">Professional Accessories</a></li>
+            </ul>
+          </section>
         </amp-accordion>
 
         <p class="px2 py1 pt2 botommy"><a id="redme" href="https://www.junglegym.com/sale"
@@ -2552,8 +2665,7 @@
       </div>
       <div role="tab" class="tabButton" option="b">Account</div>
       <div role="tabpanel" class="tabContent f-700 pt2">
-        <p class="px2 py1"><a class="text-decoration-none"
-            href="https://www.junglegym.com/customer/account/login">
+        <p class="px2 py1"><a class="text-decoration-none" href="https://www.junglegym.com/customer/account/login">
             Log in</a></p>
         <p class="px2 py1 botommy"><a class="text-decoration-none"
             href="https://www.junglegym.com/customer/account/create/">Create an Account</a></p>
@@ -2568,15 +2680,9 @@
         <p class="specialistsClimbingFrames" style="color: #333;"> <i class="fa fa-phone" style="color: #333"
             aria-hidden="true"></i> +31 85 4444 100</p>
         <p class="right-0 absolute pr1 mb1" on="tap:AMP.setState({visible: !visible})" role="button" tabindex="0">
-          
+
           <span>
-              <amp-img
-              alt="Europe"
-              src="/img/eu-flag.webp"
-              width="24"
-              height="24"
-              layout="fixed"
-            >
+            <amp-img alt="Europe" src="/img/eu-flag.webp" width="24" height="24" layout="fixed">
             </amp-img>
           </span><i class="fa fa-angle-down right pt1 pl1" aria-hidden="true"></i></p>
 
@@ -2585,239 +2691,136 @@
   </section>
   <div [class]="visible ? 'switcher-option' : 'hidelang'" id="switcher-option" class="hidelang display-none">
     <a href="https://www.junglegym.be/">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Belgium"
-        src="/img/belgium-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Belgium" src="/img/belgium-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p>
       <span>België | Belgique</span>
     </a>
     <a href="https://www.junglegym.dk">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Denmark"
-        src="/img/denmark-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Danmark</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Denmark" src="/img/denmark-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Danmark</span>
     </a>
     <a href="https://www.junglegym.de">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Germany"
-        src="/img/germany-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Deutschland</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Germany" src="/img/germany-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Deutschland</span>
     </a>
     <a href="https://www.junglegym.ee">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Estonia"
-        src="/img/estonia-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Eesti</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Estonia" src="/img/estonia-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Eesti</span>
     </a>
     <a href="https://www.junglegym.es">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Spain"
-        src="/img/spain-flag.webp"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>España</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Spain" src="/img/spain-flag.webp" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>España</span>
     </a>
     <a href="https://www.junglegym.fr">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="France"
-        src="/img/france-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>France</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="France" src="/img/france-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>France</span>
     </a>
     <a href="https://www.junglegym.gr">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Greece"
-        src="/img/greece-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Hellas</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Greece" src="/img/greece-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Hellas</span>
     </a>
     <a href="https://www.junglegym.com">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Europe"
-        src="/img/eu-flag.webp"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>International</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Europe" src="/img/eu-flag.webp" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>International</span>
     </a>
     <a href="https://www.junglegym.ie">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Ireland"
-        src="/img/ireland-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Ireland</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Ireland" src="/img/ireland-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Ireland</span>
     </a>
     <a href="https://www.junglegym.is">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Iceland"
-        src="/img/iceland-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Ísland</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Iceland" src="/img/iceland-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Ísland</span>
     </a>
     <a href="https://www.junglegym.it/">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Italy"
-        src="/img/italy-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Italia</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Italy" src="/img/italy-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Italia</span>
     </a>
     <a href="https://www.junglegym.lv">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Latvia"
-        src="/img/latvia-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Latvija</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Latvia" src="/img/latvia-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Latvija</span>
     </a>
     <a href="https://www.junglegym.lu">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Luxemburg"
-        src="/img/luxemburg-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Luxemburg | Luxembourg</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Luxemburg" src="/img/luxemburg-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Luxemburg | Luxembourg</span>
     </a>
     <a href="https://www.junglegym.mk">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Macedonia"
-        src="/img/macedonia-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Makedonija</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Macedonia" src="/img/macedonia-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Makedonija</span>
     </a>
     <a href="https://www.junglegym.nl">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Netherlands"
-        src="/img/netherlands-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Nederland</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Netherlands" src="/img/netherlands-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Nederland</span>
     </a>
     <a href="https://www.junglegym.co.no/">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Norway"
-        src="/img/norway-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Norge</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Norway" src="/img/norway-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Norge</span>
     </a>
     <a href="https://www.junglegym.at">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Austria"
-        src="/img/austria-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Österreich</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Austria" src="/img/austria-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Österreich</span>
     </a>
     <a href="https://www.junglegym.pl">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Poland"
-        src="/img/poland-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Polska</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Poland" src="/img/poland-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Polska</span>
     </a>
     <a href="https://www.junglegym.pt">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Portugal"
-        src="https://www.countryflags.io/pt/flat/24.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Portugal</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Portugal" src="https://www.countryflags.io/pt/flat/24.png" width="24" height="24" layout="fixed">
+        </amp-img>
+      </p><span>Portugal</span>
     </a>
     <a href="https://www.junglegym.ch">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Switzerland"
-        src="/img/switzerland-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Schweiz | Suisse</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Switzerland" src="/img/switzerland-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Schweiz | Suisse</span>
     </a>
     <a href="https://www.junglegym.si">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Slovenia"
-        src="/img/slovenia-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Slovenija</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Slovenia" src="/img/slovenia-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Slovenija</span>
     </a>
     <a href="https://www.junglegym.co.za">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="South Africa"
-        src="/img/southafrica-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>South Africa | Zuid-Afrika</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="South Africa" src="/img/southafrica-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>South Africa | Zuid-Afrika</span>
     </a>
     <a href="https://www.junglegym.fi">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Finland"
-        src="/img/finland-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Suomi</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Finland" src="/img/finland-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Suomi</span>
     </a>
     <a href="https://www.junglegym.se">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Sweden"
-        src="img/sweden-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Sverige</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Sweden" src="img/sweden-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Sverige</span>
     </a>
     <a href="https://www.junglegym.ua">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="Ukraine"
-        src="/img/ukraine-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>Ukraїna</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="Ukraine" src="/img/ukraine-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>Ukraїna</span>
     </a>
     <a href="https://www.junglegym.co.uk">
-      <p style="margin-top: -1px; margin-right:5px;"><amp-img
-        alt="United Kingdom"
-        src="img/unitedkingdom-flag.png"
-        width="24"
-        height="24"
-        layout="fixed"
-      ></amp-img></p><span>United Kingdom</span>
+      <p style="margin-top: -1px; margin-right:5px;">
+        <amp-img alt="United Kingdom" src="img/unitedkingdom-flag.png" width="24" height="24" layout="fixed"></amp-img>
+      </p><span>United Kingdom</span>
     </a>
   </div>
 
@@ -2829,9 +2832,9 @@
     <div class="col-8 flex flex-wrap justify-center">
       <amp-img src="/img/jg-logo.svg" width="220" height="40" alt="Jungle Gym - Backyard Playgrounds"></amp-img>
     </div>
-    <div class="searchme search-button col-1" role="button" tabindex="0" aria-label="Search button" on="tap:AMP.setState({seen: !seen})"><label class="label"
-        for="search" data-role="minisearch-label"></label></div>
-    <div class="minicart col-1"><a class="header-icons" href="https://www.junglegym.com/checkout/cart/"> </a></div>
+    <div class="searchme search-button col-1" role="button" tabindex="0" aria-label="Search button"
+      on="tap:AMP.setState({seen: !seen})"><label class="label" for="search" data-role="minisearch-label"></label></div>
+    <div class="minicart col-1"><a class="header-icons" href="https://www.junglegym.com/checkout/cart/" aria-label="View the check out cart"> </a></div>
   </header>
   <!--for search dropdown-->
   <div class="hide-menu" [class]="seen ? 'show-menu' : 'hide-menu'">
@@ -2844,9 +2847,9 @@
   <!-- End Sidebar -->
   <!-- End Navbar -->
 
-  <main id="content" role="main" class="main commerce-landing">
+  <div id="content" role="main" class="main commerce-landing">
     <section class="commerce-hero-content-wrapper center overflow-hidden">
-      <a href="product-listing.amp.html" class="text-decoration-none block">
+      <a href="https://www.junglegym.com/sale" aria-label="Check out the articles in SALE section" class="text-decoration-none block">
         <amp-img class="commerce-hero-image" src="/img/EN-m.webp" width="750" height="1031" layout="responsive"
           alt="BLACK FRIDAY SALE BANNER" noloading="" media="(max-width: 52.06rem)">
           <div placeholder="" class="commerce-loader"></div>
@@ -2857,9 +2860,9 @@
           alt="BLACK FRIDAY SALE BANNER" noloading="" media="(min-width: 52.07rem)">
           <div placeholder="" class="commerce-loader"></div>
         </amp-img>
-
+      </a>
         <div
-          class="commerce-hero-content commerce-hero-content-theme-primary flex justify-center flex-column md-mx-auto md-p0">
+          class="top-usb-section commerce-hero-content commerce-hero-content-theme-primary flex justify-center flex-column md-mx-auto md-p0">
           <div class="commerce-hero-align md-mx-auto usp-container">
             <ul class="list-reset flex flex-wrap my0 md-pl4 md-pr4 md-mxn4">
               <li class="main-usp flex justify-start col-6 sm-col-3"><svg xmlns="http://www.w3.org/2000/svg" width="30"
@@ -2882,7 +2885,7 @@
 
           </div>
         </div>
-      </a>
+
     </section>
     <section class="commerce-hero-content-wrapper center overflow-hidden">
       <div
@@ -2897,46 +2900,55 @@
 
 
         <!-- section below hidden on desktop -->
-        <amp-carousel class="carousel1" layout="responsive" width="550" height="640" type="slides" controls autoplay
+        <amp-carousel class="carousel1" layout="responsive" width="550" height="670" type="slides" controls autoplay
           loop delay="4000" data-next-button-aria-label=">" data-previous-button-aria-label="<">
           <div class="slide">
-            <amp-img src="/img/swing_category_opt.webp" layout="responsive" width="400" height="400" alt="Wooden tower with two swings in white background">
-            </amp-img>
-            <div class="commerce-hero-align md-mx-auto">
-              <p class="commerce-hero-content-body" style="margin-bottom:15px;">
-                Ultimate swings
-              </p>
-              <button class="shop-now-button" aria-label="Shop now">SHOP NOW</button>
-            </div>
+            <a href="https://www.junglegym.com/climbing-frames-playhouses/swing" aria-label="View our products in swing category"> 
+              <amp-img src="/img/swing_category_opt.webp" layout="responsive" width="400" height="400"
+                alt="Wooden tower with two swings in white background">
+              </amp-img>
+              <div class="commerce-hero-align md-mx-auto">
+                <p class="commerce-hero-content-body" style="margin-bottom:15px;">
+                  Ultimate swings
+                </p>
+                <button class="shop-now-button" aria-label="Shop now">SHOP NOW</button>
+              </div>
+            </a>
           </div>
 
           <div class="slide">
-            <amp-img src="/img/small_garden_category_opt.webp" layout="responsive" width="400" height="400"
-              alt="Two swings for small gardens in white background"></amp-img>
-            <div class="commerce-hero-align md-mx-auto">
-              <p class="commerce-hero-content-body" style="margin-bottom:15px;">
-                Cozy playhouses
-              </p>
-              <button class="shop-now-button" aria-label="Shop now">SHOP NOW</button>
-            </div>
+            <a href="https://www.junglegym.com/climbing-frames-playhouses?filter_size_garden=88" aria-label="View our products available for small gardens">
+              <amp-img src="/img/small_garden_category_opt.webp" layout="responsive" width="400" height="400"
+                alt="Two swings for small gardens in white background"></amp-img>
+              <div class="commerce-hero-align md-mx-auto">
+                <p class="commerce-hero-content-body" style="margin-bottom:15px;">
+                  For small gardens
+                </p>
+                <button class="shop-now-button" aria-label="Shop now">SHOP NOW</button>
+              </div>
+            </a>
           </div>
 
           <div class="slide">
-            <amp-img src="/img/playhouses_category_opt.webp" layout="responsive" width="400" height="400" alt="Wooden playhouse with green slide in white background">
-            </amp-img>
-            <div class="commerce-hero-align md-mx-auto">
-              <p class="commerce-hero-content-body" style="margin-bottom:15px;">
-                For small gardens
-              </p>
-              <button class="shop-now-button" aria-label="Shop now">SHOP NOW</button>
-            </div>
+            <a href="https://www.junglegym.com/climbing-frames-playhouses/playhouses" aria-label="View our products available for small gardens">
+              <amp-img src="/img/playhouses_category_opt.webp" layout="responsive" width="400" height="400"
+                alt="Wooden playhouse with green slide in white background">
+              </amp-img>
+              <div class="commerce-hero-align md-mx-auto">
+                <p class="commerce-hero-content-body" style="margin-bottom:15px;">
+                  Cozy playhouses
+                </p>
+                <button class="shop-now-button" aria-label="Shop now">SHOP NOW</button>
+              </div>
+            </a>
           </div>
         </amp-carousel>
 
         <!-- section below hidden on mobile -->
         <ul class="list-reset flex flex-wrap my0 md-pl4 md-pr4 md-mxn4 hidden-on-mobile">
           <li class="carousel-usp flex justify-start col-4">
-            <a href="product-listing.amp.html" class="text-decoration-none block" style="min-width:80%;">
+            <a href="https://www.junglegym.com/climbing-frames-playhouses/swing" aria-label="View our products in swing category" class="text-decoration-none block"
+              style="min-width:80%;">
               <amp-img class="commerce-hero-image" src="/img/swing_category_opt.webp" width="500" height="500"
                 layout="responsive" alt="Wooden tower with two swings in white background" noloading="">
               </amp-img>
@@ -2954,7 +2966,8 @@
 
           </li>
           <li class="carousel-usp flex justify-start col-4">
-            <a href="product-listing.amp.html" class="text-decoration-none block" style="min-width:80%;">
+            <a href="https://www.junglegym.com/climbing-frames-playhouses?filter_size_garden=88" aria-label="View our products available for small gardens"
+              class="text-decoration-none block" style="min-width:80%;">
               <amp-img class="commerce-hero-image" src="/img/small_garden_category_opt.webp" width="500" height="500"
                 layout="responsive" alt="Two swings for small gardens in white background" noloading="">
               </amp-img>
@@ -2971,7 +2984,8 @@
             </a>
           </li>
           <li class="carousel-usp flex justify-start col-4">
-            <a href="product-listing.amp.html" class="text-decoration-none block" style="min-width:80%;">
+            <a href="https://www.junglegym.com/climbing-frames-playhouses/playhouses" aria-label="View our products available for small gardens" class="text-decoration-none block"
+              style="min-width:80%;">
               <amp-img class="commerce-hero-image" src="/img/playhouses_category_opt.webp" width="500" height="500"
                 layout="responsive" alt="Wooden playhouse with green slide in white background" noloading="">
               </amp-img>
@@ -2988,179 +3002,340 @@
             </a>
           </li>
         </ul>
-
-
       </div>
+  </div>
+  </section>
+
+  <section class="commerce-hero-content-wrapper center overflow-hidden">
+    <a href="https://www.junglegym.com/type-of-wood-quality" aria-label="Read more about our wood quality" class="text-decoration-none block">
+      <amp-img class="commerce-hero-image" src="/img/timber_girl_mobile_800x438_opt.webp" width="800" height="438"
+        layout="responsive" alt="Little girl smiling in a wooden playhouse" noloading="">
+        <div placeholder="" class="commerce-loader"></div>
+      </amp-img>
+
+      <div
+        class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
+        style="background-color:rgb(229, 243, 223);">
+        <div class="commerce-hero-align md-mx-auto">
+          <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4" >
+            The finest sustainable timber
+          </h2>
+          <p class="commerce-hero-content-body" style="margin-top: 20px;">
+            Superior Northern European quality
+          </p>
+          <ul class="content-list" style="margin-top: 20px;">
+            <li>Smoothly planed</li>
+            <li>Weather resistant</li>
+            <li>Maintenance-free</li>
+          </ul>
+          <button class="shop-now-button" aria-label="Read more">READ MORE</button>
+        </div>
       </div>
-
-    </section>
-
-
+    </a>
+  </section>
 
 
-    <section class="commerce-hero-content-wrapper center overflow-hidden">
-      <a href="product-listing.amp.html" class="text-decoration-none block">
-        <amp-img class="commerce-hero-image" src="/img/timber_girl_mobile_800x438_opt.webp" width="800" height="438"
-          layout="responsive" alt="Little girl smiling in a wooden playhouse" noloading="">
-          <div placeholder="" class="commerce-loader"></div>
-        </amp-img>
-
-        <div
-          class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
-          style="background-color:rgb(229, 243, 223);">
-          <div class="commerce-hero-align md-mx-auto">
-            <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
-              The finest sustainable timber
-            </h2>
-            <p class="commerce-hero-content-body">
-              Superior Northern European quality
-            </p>
-            <ul class="content-list">
-              <li>Smoothly planed</li>
-              <li>Weather resistant</li>
-              <li>Maintenance-free</li>
-            </ul>
-            <button class="shop-now-button" aria-label="Read more">READ MORE</button>
-          </div>
+  <section class="commerce-hero-content-wrapper center overflow-hidden">
+    <div class="commerce-hero-align md-mx-auto">
+      <amp-video autoplay width="710" height="666" poster="/img/playhouses_category_opt.jpg"
+        src="/media/Video_Chalet_Front_Page_750pixels_3.mp4" layout="responsive" autoplay noaudio loop>
+        <div fallback>
+          <p>Your browser doesn't support HTML5 video.</p>
         </div>
-      </a>
-    </section>
-
-
-    <section class="commerce-hero-content-wrapper center overflow-hidden">
-      <div class="commerce-hero-align md-mx-auto">
-        <amp-video autoplay width="710" height="666" media="(min-width: 500px)"
-          poster="/img/playhouses_category_opt.jpg" src="/media/Video_Chalet_Front_Page_750pixels_3.mp4"
-          layout="responsive" autoplay noaudio loop>
-          <div fallback>
-            <p>Your browser doesn't support HTML5 video.</p>
-          </div>
-        </amp-video>
+      </amp-video>
+    </div>
+    <a href="https://www.junglegym.com/design-your-own" aria-label="Go to the page to design your own playground" class="text-decoration-none block">
+      <div
+        class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
+        style="margin-top: -40px;">
+        <div class="commerce-hero-align md-mx-auto">
+          <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
+            Design Your Own
+          </h2>
+          <p class="commerce-hero-content-body">
+            Endless combinations
+          </p>
+          <ul class="content-list">
+            <li>Choose your timber</li>
+            <li>Select your favourite design</li>
+            <li>Add Modules, a Slide or a Fireman’s Pole</li>
+          </ul>
+          <button class="shop-now-button" aria-label="Design now">DESIGN NOW</button>
+        </div>
       </div>
-      <a href="product-listing.amp.html" class="text-decoration-none block">
-        <div
-          class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
-          style="margin-top: -40px;">
-          <div class="commerce-hero-align md-mx-auto">
-            <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
-              Design Your Own
-            </h2>
-            <p class="commerce-hero-content-body">
-              Endless combinations
-            </p>
-            <ul class="content-list">
-              <li>Choose your timber</li>
-              <li>Select your favourite design</li>
-              <li>Add Modules, a Slide or a Fireman’s Pole</li>
-            </ul>
-            <button class="shop-now-button" aria-label="Design now">DESIGN NOW</button>
-          </div>
+    </a>
+  </section>
+
+  <section class="commerce-hero-content-wrapper center overflow-hidden">
+    <a href="https://www.junglegym.com/commercial-climbing-frames/" aria-label="View our climbing frame products for commercial use" class="text-decoration-none block">
+      <amp-img class="commerce-hero-image" src="/img/outdoor-play-equipment-for-schools-climbing-frame-q2s_4_opt.webp"
+        width="800" height="438" layout="responsive"
+        alt="Children playing in public playground with Jungle Gym professional playground equipment" noloading="">
+        <div placeholder="" class="commerce-loader"></div>
+      </amp-img>
+
+      <div
+        class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
+        style="background-color:rgb(229, 243, 223);">
+        <div class="commerce-hero-align md-mx-auto">
+          <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
+            Commercial playgrounds
+          </h2>
+          <p class="commerce-hero-content-body" style="margin-top: 20px;">
+            For sport clubs, camp sites, nurseries, ...
+          </p>
+          <ul class="content-list" style="margin-top: 20px;">
+            <li>Good value for money</li>
+            <li>Low maintenance</li>
+            <li>Tested according EU standard EN 1176: 2017</li>
+          </ul>
+          <button class="shop-now-button" aria-label="Shop now">SHOP NOW </button>
+          <amp-img width="66" height="31" layout="fixed" src="/img/tuv-gs-mark.svg"
+            style="margin-bottom: -10px; margin-left: 10px;" />
         </div>
-      </a>
-    </section>
+      </div>
+    </a>
+  </section>
 
-    <section class="commerce-hero-content-wrapper center overflow-hidden">
-      <a href="product-listing.amp.html" class="text-decoration-none block">
-        <amp-img class="commerce-hero-image" src="/img/outdoor-play-equipment-for-schools-climbing-frame-q2s_4_opt.webp"
-          width="800" height="438" layout="responsive" alt="Children playing in public playground with Jungle Gym professional playground equipment" noloading="">
-          <div placeholder="" class="commerce-loader"></div>
-        </amp-img>
+  <section class="center">
+    <amp-carousel id="reviews-carousel" layout="responsive" width="550" height="250" type="slides" controls autoplay
+      loop delay="4000" data-next-button-aria-label=">" data-previous-button-aria-label="<">
 
-        <div
-          class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
-          style="background-color:rgb(229, 243, 223);">
-          <div class="commerce-hero-align md-mx-auto">
-            <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
-              Commercial playgrounds
-            </h2>
-            <p class="commerce-hero-content-body">
-              For sport clubs, camp sites, nurseries, ...
-            </p>
-            <ul class="content-list">
-              <li>Good value for money</li>
-              <li>Low maintenance</li>
-              <li>Tested according EU standard EN 1176: 2017</li>
-            </ul>
-            <button class="shop-now-button" aria-label="Shop now">SHOP NOW </button>
-            <amp-img width="66" height="31" layout="fixed" src="/img/tuv-gs-mark.svg"
-              style="margin-bottom: -10px; margin-left: 10px;" />
-          </div>
+
+      <div class="slide" style="text-align: center;">
+        <div style=" padding: 30px 0 10px 0; display: block; ">
+          <amp-img src="/img/elizabeth_junglegym_client.webp" layout="fixed" width="90" height="90"
+            alt="Jungle Gym Client Photo">
+          </amp-img>
         </div>
-      </a>
-    </section>
-
-
-      <amp-carousel class="carousel1" layout="responsive" width="550" height="640" type="slides" controls autoplay
-        loop delay="4000" data-next-button-aria-label=">" data-previous-button-aria-label="<">
-        
-        
-        <div class="slide" style="text-align: center;">
-          <div style=" padding: 20px 0; display: block; ">
-              <amp-img src="/img/tuxpi.com.1553600863.jpg" layout="fixed" width="80" height="80" alt="Jungle Gym Client Photo">
-              </amp-img>
-          </div>
-          <div class="flex flex-wrap col-12">
-            <div class="col-1"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
-            <div class="col-10">
-            <p style="font-size: 18px; letter-spacing: 1.1px">
-                <i> I was a bit sceptical on spending this amount at first, 
-                but when I saw the quality of the climbing frame, it really speaks for itself, 
-                these things will last you double the 10 year guarantee you get on them. 
-                The kids ABSOLUTELY LOVE IT! I am now the 'best mummy ever'. 
+        <div class="flex flex-wrap col-12">
+          <div class="col-1"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+          <div class="col-10">
+            <p class="client-review-text">
+              <i> I was a bit sceptical on spending this amount at first,
+                but when I saw the quality of the climbing frame, it really speaks for itself,
+                these things will last you double the 10 year guarantee you get on them.
+                The kids ABSOLUTELY LOVE IT! I am now the 'best mummy ever'.
                 So happy with this climbing frame, I would recommend it to anyone.</i> <br><br>
-                Elizabeth, mom of Emma and Lewis
+              Elizabeth, mom of Emma and Lewis
             </p>
           </div>
-            <div class="col-1"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
+          <div class="col-1"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
+        </div>
+      </div>
+
+      <div class="slide" style="text-align: center;">
+        <div style=" padding: 30px 0 10px 0; display: block;">
+          <amp-img src="/img/sally-junglegym-client.webp" layout="fixed" width="90" height="90"
+            alt="Jungle Gym Client Photo">
+          </amp-img>
+        </div>
+        <div class="flex flex-wrap col-12">
+          <div class="col-1"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+          <div class="col-10">
+            <p class="client-review-text">
+              <i> I was a bit sceptical on spending this amount at first, but when I saw the quality of the climbing
+                frame,
+                it really speaks for itself, these things will last you double the 10 year guarantee you get on them.
+                The kids ABSOLUTELY LOVE IT! I am now the 'best mummy ever'. So happy with this climbing frame, I
+                would recommend it to anyone.</i> <br><br>
+              Sally
+            </p>
+          </div>
+          <div class="col-1"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
+        </div>
+      </div>
+
+      <div class="slide" style="text-align: center;">
+        <div style=" padding: 30px 0 10px 0; display: block; ">
+          <amp-img src="/img/hans-junglegym-client.webp" layout="fixed" width="90" height="90"
+            alt="Jungle Gym Client Photo">
+          </amp-img>
+        </div>
+        <div class="flex flex-wrap col-12">
+          <div class="col-1"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+          <div class="col-10">
+            <p class="client-review-text">
+              <i> Has built up very well thanks to the super construction manual, as well as the additional parts
+                such as screws, drills and ground anchoring were there. The tower has become beautiful. I can only
+                recommend.</i> <br><br>
+              Hans, Vater von Leonie und Marko
+            </p>
+          </div>
+          <div class="col-1"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </amp-carousel>
+  </section>
+
+
+  <section class="commerce-hero-content-wrapper center overflow-hidden">
+    <div
+      class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
+      style="background-color:rgb(229, 243, 223);">
+      <div class="commerce-hero-align md-mx-auto">
+        <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
+          Make childhood memories
+        </h2>
+        <h3 class="number-statistics">4.038</h3>
+        <p class="commerce-hero-content-body">
+          adventurous combinations
+        </p>
+        <h3 class="number-statistics">1.201.507</h3>
+        <p class="commerce-hero-content-body">
+          climbing frames sold
+        </p>
+        <h3 class="number-statistics">31</h3>
+        <p class="commerce-hero-content-body">
+          years of expertise
+        </p>
+
+      </div>
+    </div>
+    </a>
+  </section>
+
+  <section class="commerce-hero-content-wrapper center overflow-hidden">
+    <div
+      class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0">
+      <div class="commerce-hero-align md-mx-auto col-12">
+        <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
+          Happy customers all over the world
+        </h2>
+        <p class="commerce-hero-content-body">
+          View <a href="https://www.junglegym.com/reviews"><u>more reviews</u> about #JungleGym</a>
+        </p>
+        <div class="flex col-12 md-mx-auto" style=" margin: 0 auto; width: 90%; padding-top: 20px;">
+          <div class="col-4" style="margin: 0 3px;">
+            <amp-img src="/img/300x300_social_images__0001_cubby_climb_opt.webp" layout="responsive" width="200" height="200"
+              alt="Wooden playtower with climbing nets">
+            </amp-img>
+          </div>
+          <div class="col-4" style="margin: 0 3px;">
+            <amp-img src="/img/300x300_social_images__0001_cubby_climb_opt.webp" layout="responsive" width="200" height="200"
+              alt="Wooden playtower with climbing nets">
+            </amp-img>
+          </div>
+          <div class="col-4" style="margin: 0 3px;">
+            <amp-img src="/img/300x300_social_images__0001_cubby_climb_opt.webp" layout="responsive" width="200" height="200"
+              alt="Wooden playtower with climbing nets">
+            </amp-img>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="slide" style="text-align: center;">
-            <div style=" padding: 20px 0; display: block; ">
-                <amp-img src="/img/tuxpi-com-1549986263.jpg" layout="fixed" width="80" height="80" alt="Jungle Gym Client Photo">
-                </amp-img>
-            </div>
-            <div class="flex flex-wrap col-12">
-              <div class="col-1"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
-              <div class="col-10">
-              <p style="font-size: 18px; letter-spacing: 1.1px; font-weight: 300">
-                  <i> I was a bit sceptical on spending this amount at first, but when I saw the quality of the climbing frame, 
-                    it really speaks for itself, these things will last you double the 10 year guarantee you get on them. 
-                    The kids ABSOLUTELY LOVE IT! I am now the 'best mummy ever'. So happy with this climbing frame, I would recommend it to anyone.</i> <br><br>
-                  Sally
-              </p>
-            </div>
-              <div class="col-1"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
-            </div>
-          </div>
+  <section class="prefooter commerce-hero-content-wrapper center overflow-hidden" style="background: #f5f5f5;">
+    <div class="flex col-12 md-mx-auto" style=" margin: 0 auto; padding-top: 20px;">
+      <div class="col-1"></div>
+      <div class="col-2">
+        <i class="fa fa-truck" aria-hidden="true"></i>
+        <p><b>Free</b> delivery of climbing frames</p>
+      </div>
+      <div class="col-2">
+        <i class="fa fa-credit-card" aria-hidden="true"></i>
+        <p><b>Safe</b> payment</p>
+      </div>
+      <div class="col-2">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <p><b>9/10</b> on Google Reviews</p>
+      </div>
+      <div class="col-2">
+        <i class="fas fa-shield-alt fa-1x " aria-hidden="true"></i>
+        <p>Carefully tested for <b>safety</b></p>
+      </div>
+      <div class="col-2">
+        <i class="fas fa-medal fa-1x" aria-hidden="true"></i>
+        <p>More than <b>30 years</b> of expertise</p>
+      </div>
+      <div class="col-1"></div>
 
-            <div class="slide" style="text-align: center;">
-                <div style=" padding: 20px 0; display: block; ">
-                    <amp-img src="/img/tuxpi.com.1553599991.jpg" layout="fixed" width="80" height="80" alt="Jungle Gym Client Photo">
-                    </amp-img>
-                </div>
-                <div class="flex flex-wrap col-12">
-                  <div class="col-1"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
-                  <div class="col-10">
-                  <p style="font-size: 18px; letter-spacing: 1.1px">
-                      <i> Has built up very well thanks to the super construction manual, as well as the additional parts 
-                        such as screws, drills and ground anchoring were there. The tower has become beautiful. I can only recommend.</i> <br><br>
-                        Hans, Vater von Leonie und Marko
-                  </p>
-                </div>
-                  <div class="col-1"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
-                </div>
-              </div>
-
-    
-      </amp-carousel>
-
+    </div>
+  </section>
 
   </main>
-  <footer class="commerce-footer center">
+  <footer class="commerce-footer page-footer center">
 
-    <p> TODO: Folding Footer content </p>
-
+    <amp-accordion class="footer-accordion" animate expand-single-section>
+      <section>
+        <h4>Customer service</h4>
+        <ul style="list-style: none; margin: 0 auto; padding-left: 0;">
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/contact-us">Customer service</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/contact-us">Contact</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/warranty">Warranty</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/right-of-withdrawal">Right of withdrawal</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/commercial-climbing-frames">Commercial climbing frames</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Order</h4>
+        <ul style="list-style: none; margin: 0 auto; padding-left: 0;">
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/order">Order</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/payment">Payment</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/delivery">Delivery</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/assembly">Assembly service/a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/accessories/spare-parts">Spare parts</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4>Safety and quality</h4>
+        <ul style="list-style: none; margin: 0 auto; padding-left: 0;">
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/assembly">Assembly</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/assembly">Manuals</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/type-of-wood-quality">Quality of wood</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/installation-safety">Safety</a></li>
+          <li style="background-color:#334152; border: unset; padding: 5px 0;"><a
+              href="https://www.junglegym.com/type-of-wood-quality">Durability</a></li>
+        </ul>
+      </section>
+    </amp-accordion>
+    <div class="social-section">
+      <h4>Social & Blog</h4>
+      <div class="footer links" id="social-media-icons">
+        <a href="https://www.facebook.com/OfficialJungleGym" aria-label="Visit our official Facebook page" TARGET="_blank">
+          <span class="fa-stack fa-lg" style="margin-right:15px;">
+            <i class="fab fa-facebook-f fa-1x" style="position: absolute; margin-left: 15px; margin-top: 9px;"></i>
+            <i class="fa fa-circle fa-2x" style="color:#3b5998"></i></span></a>
+        <a href="https://www.instagram.com/junglegymofficial/" aria-label="Visit our official Instagram page" TARGET="_blank">
+          <span class="fa-stack fa-lg" style="margin-right:15px;">
+            <i class="fab fa-instagram fa-1x" style="position: absolute; margin-left: 12px; margin-top: 10px;"></i>
+            <i class="fa fa-circle fa-2x" style="color:#833ab4"></i>
+          </span></a>
+        <a href="https://nl.pinterest.com/junglegymofficial/" aria-label="Visit our official Pinterest page" TARGET="_blank">
+          <span class="fa-stack fa-lg" style="margin-right:15px;">
+            <i class="fab fa-pinterest-p fa-1x" style="position: absolute; margin-left: 12px; margin-top: 10px;"></i>
+            <i class="fa fa-circle fa-2x" style="color:#bd081c"></i>
+          </span></a>
+        <a href="https://www.youtube.com/user/junglegymplaygrounds" aria-label="Visit our official Youtube channel" TARGET="_blank">
+          <span class="fa-stack fa-lg" style="margin-right:15px;">
+            <i class="fab fa-youtube fa-1x" style="position: absolute; margin-left: 9px; margin-top: 10px;"></i>
+            <i class="fa fa-circle fa-2x" style="color:#cd201f"></i>
+          </span>
+        </a>
+        <a href="https://www.junglegym.com/blog" aria-label="Visit our official blog">
+          <span class="fa-stack fa-lg">
+            <span
+              style="color: white; font-size: small; position: absolute; margin-left: 7px; font-weight: 600;">blog</span>
+            <i class="fa fa-circle fa-2x" style="color:#4ec425"></i>
+          </span>
+        </a>
+    </div>
+    </div>
   </footer>
 </body>
 
