@@ -24,16 +24,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext" rel="stylesheet">
   <style amp-custom>
-    @font-face {
+     @font-face {
       font-family: Luma-Icons;
       src: url(fonts/Luma-Icons.woff2)
     }
 
     html {
-      max-width: 900px;
       font-family: 'Open Sans', sans-serif;
       line-height: 1.15;
       -ms-text-size-adjust: 100%;
@@ -1846,7 +1844,6 @@
       text-decoration-line: none;
       text-decoration-style: solid;
       text-size-adjust: 100%;
-      margin-left:20px;
     }
 
     .content-list {
@@ -1882,28 +1879,6 @@
 
     .tuv-logo {
       margin-top: 15px
-    }
-
-    @media (max-width:800px) {
-      .hidden-on-mobile {
-        display: none
-      }
-
-      .carousel1 {
-        display: flex;
-        margin-bottom: 1rem;
-      }
-    }
-
-
-    @media (min-width:801px) {
-      .carousel1 {
-        display: none
-      }
-
-      .hidden-on-mobile {
-        display: flex
-      }
     }
 
     .control {
@@ -2318,10 +2293,36 @@
       font-weight: 300
     }
 
+    .social-h4{
+      font-weight: 700; 
+      margin: 0 auto; 
+      max-width: 60%;
+    }
+
+    .footer.links {
+      margin-left: 20%;
+    }
+
     @media (min-width:300px) {
       #reviews-carousel {
         height: 520px
       }
+    }
+
+    @media (max-width:550px){
+      .social-section{
+        margin: 0 auto; 
+        width: 100%;
+      }
+
+      .footer.links{
+        margin-left: 10%;
+      }
+
+      /* .social-section .social-h4{
+      margin: 0 auto; max-width: 60%;
+    } */
+
     }
 
     @media (min-width:411px) {
@@ -2336,12 +2337,6 @@
       }
     }
 
-    @media (min-width:900px) {
-      #reviews-carousel {
-        height: 330px
-      }
-    }
-
     a {
       text-decoration: none
     }
@@ -2353,12 +2348,12 @@
     .prefooter {
       padding: 25px 0 35px 0;
       font-size: 15px;
-      font-weight: 400
+      font-weight: 400;
     }
 
     .prefooter .col-2 {
       color: #333;
-      font-weight: 400
+      font-weight: 400;
     }
 
     .page-footer {
@@ -2373,19 +2368,21 @@
       font-size: 18px;
       border: unset;
       padding: 10px 0;
-      font-weight: 400
+      font-weight: 700;
     }
 
     .social-section h4 {
-      padding-top: 5px
+      padding-top: 5px;
     }
 
-    .top-usb-section {
-      padding-top: 35px
+ @media (min-width:900px) {
+      #reviews-carousel {
+        height: 330px;
+      }
     }
 
     #social-media-icons {
-      padding-left: 0
+      padding-left: 0;
     }
 
     .folding-footer-list-item {
@@ -2421,79 +2418,101 @@
     margin: 10px auto 0 auto;
     }
 
-  </style>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext"
-    rel="stylesheet">
-  <style amp-boilerplate>
-    body {
-      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    .footer-h4::before{
+      content: "\e622";
+      font-weight: 300;
+      font-family: "luma-icons";
+      font-size: 0.7em;
+      padding-right: 10px;
+    }
+    .social-h4::before{
+      content: "";
+      font-weight: 300;
+      font-family: "luma-icons";
+      font-size: 0.7em;
+      padding-right: 22px;
+      margin-bottom: 8px;
     }
 
-    @-webkit-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
+    .top-sale-banner-img {
+    min-width: 100%;
     }
 
-    @-moz-keyframes -amp-start {
-      from {
-        visibility: hidden
+    @media (min-width: 1440px){
+      .top-usb-section {
+        width: 80%;
+        margin: 0 auto;
       }
 
-      to {
-        visibility: visible
+      .timber-img-wrapper {
+        width: 30%;
+        display: inline-block;
+        height: 460px;
+        overflow: hidden;
       }
+
+      .timber-text {
+        padding-left: 5%;
+        width: 70%;
+        display: inline-block;
+        float: left;
+        min-height: 460px;
+        padding-top: 60px;
+      }
+
+
+
     }
 
-    @-ms-keyframes -amp-start {
-      from {
-        visibility: hidden
+    @media (min-width:900px) {
+      #reviews-carousel {
+        height: 330px
       }
 
-      to {
-        visibility: visible
+      .carousel1 {
+        display: none
       }
+
+      .hidden-on-mobile {
+        display: flex
+      }
+
+      .timber-img-wrapper {
+        width: 50%;
+        display: inline-block;
+        min-height: 420px;
+        overflow: hidden;
+      }
+
+      .timber-text {
+        padding-left: 5%;
+        width: 50%;
+        display: inline-block;
+        float: left;
+        height: 425px;
+        padding-top: 40px;
+      }
+
     }
 
-    @-o-keyframes -amp-start {
-      from {
-        visibility: hidden
+    @media (max-width: 899px) {
+      .sustainable-timber-img{
+        min-width: 100%;
       }
 
-      to {
-        visibility: visible
+      .hidden-on-mobile {
+        display: none
       }
+
+      .carousel1 {
+        display: flex;
+        margin-bottom: 1rem;
+      }
+
     }
-
-    @keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-
-      to {
-        visibility: visible
-      }
-    }
-  </style>
-  <noscript>
-    <style amp-boilerplate>
-      body {
-        -webkit-animation: none;
-        -moz-animation: none;
-        -ms-animation: none;
-        animation: none
-      }
-    </style>
-  </noscript>
+  
+ </style>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <link rel="canonical" href="/index.html" />
   <title>Wooden playground equipment for your garden | Jungle Gym®</title>
 </head>
@@ -2587,13 +2606,6 @@
             style="color: #333" aria-hidden="true"></i> Specialists in Climbing Frames & Swings</p>
         <p class="specialistsClimbingFrames" style="color: #333;"> <i class="fa fa-phone" style="color: #333"
             aria-hidden="true"></i> +31 85 4444 100</p>
-        <!-- <p class="right-0 absolute pr1 mb1" on="tap:AMP.setState({visible: !visible})" role="button" tabindex="0">
-          <span>
-            <amp-img alt="Europe" src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/eu-flag.webp" width="24"
-              height="24" layout="fixed">
-            </amp-img>
-          </span><i class="fa fa-angle-down right pt1 pl1" aria-hidden="true"></i></p> -->
-
       </div>
     </div>
   </section>
@@ -2760,7 +2772,7 @@
   </div>
 
 
-  <header class="ampstart-headerbar flex flex-wrap py2 px1 col-12" style="justify-content: space-between;">
+  <header class="ampstart-headerbar flex flex-wrap px1 col-12" style="justify-content: space-between; padding-top: 2em; padding-bottom: 2em;" >
     <div role="button" aria-label="open sidebar" on="tap:sidebar.toggle" tabindex="0"
       class="ampstart-navbar-trigger col-1">☰
     </div>
@@ -2785,25 +2797,31 @@
   <!-- End Navbar -->
 
   <div id="content" role="main" class="main commerce-landing">
+
     <section class="commerce-hero-content-wrapper center">
       <a href="https://www.junglegym.com/sale" aria-label="Check out the articles in SALE section"
         class="text-decoration-none block">
-        <amp-img class="commerce-hero-image" src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/EN-m.webp"
-          width="750" height="1031" layout="responsive" alt="BLACK FRIDAY SALE BANNER" noloading=""
-          media="(max-width: 52.06rem)">
-          <div placeholder="" class="commerce-loader"></div>
+        <amp-img  class="commerce-hero-image top-sale-banner-img" src="img/jg-holiday-giveaway-en-m.webp"
+          width="750" height="1031" layout="responsive" alt="Holiday Season Sale Banner" noloading=""
+          media="(max-width: 899px)">
+              <amp-img fallback class="commerce-hero-image top-sale-banner-img" src="img/jg-holiday-giveaway-en-m.jpg"
+              width="750" height="1031" layout="responsive" alt="Holiday Season Sale Banner" noloading=""
+              media="(max-width: 899px)">
+            </amp-img>
         </amp-img>
-
-
-        <amp-img class="commerce-hero-image" src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/EN.webp"
-          width="1918" height="600" layout="responsive" alt="BLACK FRIDAY SALE BANNER" noloading=""
-          media="(min-width: 52.07rem)">
-          <div placeholder="" class="commerce-loader"></div>
+        <amp-img class="commerce-hero-image top-sale-banner-img" src="img/jg-holiday-giveaway-en.webp"
+          width="1918" height="600" layout="responsive" alt="Holiday Season Sale Banner" noloading=""
+          media="(min-width: 900px)">
+              <amp-img fallback class="commerce-hero-image top-sale-banner-img" src="img/jg-holiday-giveaway-en-m.jpg"
+              width="1918" height="600" layout="responsive" alt="Holiday Season Sale Banner" noloading=""
+              media="(min-width: 900px)">
+            </amp-img>
         </amp-img>
       </a>
       <div
         class="top-usb-section commerce-hero-content commerce-hero-content-theme-primary flex justify-center flex-column md-mx-auto md-p0">
         <div class="commerce-hero-align md-mx-auto usp-container">
+
           <ul class="list-reset flex flex-wrap my0 md-pl4 md-pr4 md-mxn4">
             <li class="main-usp flex justify-start col-6 sm-col-3"><svg xmlns="http://www.w3.org/2000/svg" width="30"
                 height="30" viewBox="0 0 30 30">
@@ -2825,8 +2843,8 @@
 
         </div>
       </div>
-
     </section>
+
     <section class="commerce-hero-content-wrapper center" style="margin-top: -40px;">
       <div
         class="climbing-frames-content commerce-hero-content-theme-primary flex justify-center flex-column md-mx-auto md-p0">
@@ -2837,7 +2855,6 @@
         <p class="climbing-frames-content-details">
           Reliable design for endless backyard activity
         </p>
-
 
         <!-- section below hidden on desktop -->
         <amp-carousel class="carousel1" layout="responsive" width="550" height="680" type="slides" controls autoplay
@@ -2864,7 +2881,7 @@
                 layout="responsive" width="400" height="400" alt="Two swings for small gardens in white background">
               </amp-img>
               <div class="commerce-hero-align md-mx-auto">
-                <p class="commerce-hero-content-body" style="margin-bottom:15px;">
+                <p class="commerce-hero-content-body" style=" font-size: 26px; margin-bottom:15px;">
                   For small gardens
                 </p>
                 <button class="shop-now-button" aria-label="Shop now">SHOP NOW</button>
@@ -2880,7 +2897,7 @@
                 alt="Wooden playhouse with green slide in white background">
               </amp-img>
               <div class="commerce-hero-align md-mx-auto">
-                <p class="commerce-hero-content-body" style="margin-bottom:15px;">
+                <p class="commerce-hero-content-body" style=" font-size: 26px; margin-bottom:15px;">
                   Cozy playhouses
                 </p>
                 <button class="shop-now-button" aria-label="Shop now">SHOP NOW</button>
@@ -2890,7 +2907,7 @@
         </amp-carousel>
 
         <!-- section below hidden on mobile -->
-        <ul class="list-reset flex flex-wrap my0 md-pl4 md-pr4 md-mxn4 hidden-on-mobile">
+        <ul class="list-reset flex flex-wrap my0 md-pl4 md-pr4 md-mxn4 hidden-on-mobile" style="margin-bottom: 1.7em;">
           <li class="carousel-usp flex justify-start col-4">
             <a href="https://www.junglegym.com/climbing-frames-playhouses/swing"
               aria-label="View our products in swing category" class="text-decoration-none block"
@@ -2902,7 +2919,7 @@
 
               <div
                 class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0">
-                <div class="commerce-hero-align md-mx-auto" style="margin-top:-30px;">
+                <div class="commerce-hero-align md-mx-auto">
                   <p class="commerce-hero-content-body" style="margin-bottom:15px;">
                     Ultimate swings
                   </p>
@@ -2923,7 +2940,7 @@
 
               <div
                 class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0">
-                <div class="commerce-hero-align md-mx-auto" style="margin-top:-30px;">
+                <div class="commerce-hero-align md-mx-auto">
                   <p class="commerce-hero-content-body" style="margin-bottom:15px;">
                     For small gardens
                   </p>
@@ -2944,7 +2961,7 @@
 
               <div
                 class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0">
-                <div class="commerce-hero-align md-mx-auto" style="margin-top:-30px;">
+                <div class="commerce-hero-align md-mx-auto">
                   <p class="commerce-hero-content-body" style="margin-bottom:15px;">
                     Cozy playhouses
                   </p>
@@ -2958,17 +2975,18 @@
   </div>
   </section>
 
-  <section class="commerce-hero-content-wrapper overflow-hidden">
+  <section class="commerce-hero-content-wrapper overflow-hidden timber-section">
     <a href="https://www.junglegym.com/type-of-wood-quality" aria-label="Read more about our wood quality"
       class="text-decoration-none block">
-      <amp-img class="commerce-hero-image"
+      <div class="timber-img-wrapper">
+      <amp-img class="commerce-hero-image sustainable-timber-img"
         src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/timber_girl_mobile_800x438_opt.webp" width="800"
-        height="438" layout="responsive" alt="Little girl smiling in a wooden playhouse" noloading="">
-        <div placeholder="" class="commerce-loader"></div>
+        height="438" heights="(min-width: 900px) 83%, 100%" layout="responsive" alt="Little girl smiling in a wooden playhouse" noloading="">
       </amp-img>
+    </div>
 
       <div
-        class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
+        class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0 timber-text"
         style="background-color:rgb(229, 243, 223); padding-bottom: 2em;">
         <div class="commerce-hero-align md-mx-auto">
           <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
@@ -2982,16 +3000,15 @@
             <li>Weather resistant</li>
             <li>Maintenance-free</li>
           </ul>
-          <button class="shop-now-button" aria-label="Read more">READ MORE</button>
+          <button class="shop-now-button" aria-label="Read more" style="margin-left:20px;">READ MORE</button>
         </div>
       </div>
     </a>
   </section>
 
-
-  <section class="commerce-hero-content-wrapper center overflow-hidden">
+  <section class="commerce-hero-content-wrapper overflow-hidden">
     <div class="commerce-hero-align md-mx-auto">
-      <amp-video autoplay width="710" height="666"
+      <amp-video autoplay width="500" height="500"
         poster="https://albiberon.github.io/JG_Amp_Homepage_Project/img/playhouses_category_opt.jpg"
         src="media/Video_Chalet_Front_Page_750pixels_3.mp4" layout="responsive" autoplay noaudio loop>
         <div fallback>
@@ -3003,12 +3020,12 @@
       class="text-decoration-none block">
       <div
         class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
-        style="margin-top: -40px;">
+        style="margin-top: -40px; padding: 1rem 1rem 2em 1rem;">
         <div class="commerce-hero-align md-mx-auto">
           <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
             Design Your Own
           </h2>
-          <p class="commerce-hero-content-body">
+          <p class="commerce-hero-content-body" style="margin-top: 10px; font-size: 26px;">
             Endless combinations
           </p>
           <ul class="content-list">
@@ -3016,13 +3033,13 @@
             <li>Select your favourite design</li>
             <li>Add Modules, a Slide or a Fireman’s Pole</li>
           </ul>
-          <button class="shop-now-button" aria-label="Design now">DESIGN NOW</button>
+          <button class="shop-now-button" aria-label="Design now" style="margin-left:20px;">DESIGN NOW</button>
         </div>
       </div>
     </a>
   </section>
 
-  <section class="commerce-hero-content-wrapper center overflow-hidden">
+  <section class="commerce-hero-content-wrapper overflow-hidden">
     <a href="https://www.junglegym.com/commercial-climbing-frames/"
       aria-label="View our climbing frame products for commercial use" class="text-decoration-none block">
       <amp-img class="commerce-hero-image"
@@ -3034,20 +3051,20 @@
 
       <div
         class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
-        style="background-color:rgb(229, 243, 223);">
+        style="background-color:rgb(229, 243, 223); padding: 1rem 1rem 2em 1rem;">
         <div class="commerce-hero-align md-mx-auto">
           <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
             Commercial playgrounds
           </h2>
-          <p class="commerce-hero-content-body" style="margin-top: 20px;">
+          <p class="commerce-hero-content-body" style="margin-top: 10px; font-size: 26px;">
             For sport clubs, camp sites, nurseries, ...
           </p>
-          <ul class="content-list" style="margin-top: 20px;">
+          <ul class="content-list">
             <li>Good value for money</li>
             <li>Low maintenance</li>
             <li>Tested according EU standard EN 1176: 2017</li>
           </ul>
-          <button class="shop-now-button" aria-label="Shop now">SHOP NOW </button>
+          <button class="shop-now-button" aria-label="Shop now" style="margin-left:20px;">SHOP NOW </button>
           <amp-img width="66" height="31" layout="fixed"
             src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/tuv-gs-mark.svg"
             style="margin-bottom: -10px; margin-left: 10px;" />
@@ -3058,10 +3075,9 @@
 
   <section class="center">
     <amp-carousel id="reviews-carousel" layout="responsive" width="550" height="250" type="slides" controls autoplay
-      loop delay="4000" data-next-button-aria-label=">" data-previous-button-aria-label="<">
+      loop delay="4000">
 
-
-      <div class="slide" style="text-align: center;">
+      <div class="slide" style="text-align: center; padding: 1rem 1rem 2em 1rem;">
         <div style=" padding: 30px 0 10px 0; display: block; ">
           <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/elizabeth-junglegym-client.webp"
             layout="fixed" width="90" height="90" alt="Jungle Gym Client Photo">
@@ -3131,7 +3147,7 @@
   <section class="commerce-hero-content-wrapper center overflow-hidden">
     <div
       class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
-      style="background-color:rgb(229, 243, 223);">
+      style="background-color:rgb(229, 243, 223); padding: 1.5rem 1rem 2em 1rem;">
       <div class="commerce-hero-align md-mx-auto">
         <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
           Make childhood memories
@@ -3156,7 +3172,7 @@
 
   <section class="commerce-hero-content-wrapper center overflow-hidden">
     <div
-      class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0">
+      class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0" style="padding: 1.5rem 1rem 2em 1rem;">
       <div class="commerce-hero-align md-mx-auto col-12">
         <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
           Happy customers all over the world
@@ -3164,7 +3180,7 @@
         <p class="commerce-hero-content-body">
           View <a href="https://www.junglegym.com/reviews"><u>more reviews</u> about #JungleGym</a>
         </p>
-        <div class="flex col-12 md-mx-auto" style=" margin: 0 auto; width: 90%; padding-top: 20px;">
+        <div class="flex col-12 md-mx-auto" style=" margin: 40px auto 30px auto; width: 90%;">
           <div class="col-4" style="margin: 0 3px;">
             <amp-img
               src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0001_cubby_climb_opt.webp"
@@ -3218,12 +3234,12 @@
   </section>
 
   </main>
-  <footer class="commerce-footer page-footer center">
+  <footer class="commerce-footer page-footer">
 
-    <amp-accordion class="footer-accordion" animate expand-single-section>
+    <amp-accordion class="footer-accordion" animate expand-single-section style="margin: 0 auto; max-width: 60%">
       <section>
-        <h4>Customer service</h4>
-        <ul style="list-style: none; margin: 0 auto; padding-left: 0;">
+        <h4 class="footer-h4" style="font-weight: 700;">Customer service</h4>
+        <ul style="list-style: none; margin: 0 auto; padding-left: 24px;">
           <li class="folding-footer-item">
             <a href="https://www.junglegym.com/contact-us">Customer service</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/contact-us">Contact</a></li>
@@ -3235,8 +3251,8 @@
         </ul>
       </section>
       <section>
-        <h4>Order</h4>
-        <ul style="list-style: none; margin: 0 auto; padding-left: 0;">
+        <h4 class="footer-h4" style="font-weight: 700;">Order</h4>
+        <ul style="list-style: none; margin: 0 auto; padding-left: 24px;">
           <li class="folding-footer-item"><a href="https://www.junglegym.com/order">Order</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/payment">Payment</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/delivery">Delivery</a></li>
@@ -3246,8 +3262,8 @@
         </ul>
       </section>
       <section>
-        <h4>Safety and quality</h4>
-        <ul style="list-style: none; margin: 0 auto; padding-left: 0;">
+        <h4 class="footer-h4" style="font-weight: 700;">Safety and quality</h4>
+        <ul style="list-style: none; margin: 0 auto; padding-left: 24px;">
           <li class="folding-footer-item"><a href="https://www.junglegym.com/assembly">Assembly</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/assembly">Manuals</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/type-of-wood-quality">Quality of wood</a>
@@ -3257,8 +3273,8 @@
         </ul>
       </section>
     </amp-accordion>
-    <div class="social-section">
-      <h4>Social & Blog</h4>
+    <div class="social-section" style="margin: 0 auto;">
+      <h4 class="social-h4">Social & Blog</h4>
       <div class="footer links" id="social-media-icons">
         <a href="https://www.facebook.com/OfficialJungleGym" aria-label="Visit our official Facebook page"
           TARGET="_blank" rel="noopener">
@@ -3294,8 +3310,8 @@
       </div>
 
     </div>
-    <div class="absolute-bottom">
-      <p class="" on="tap:AMP.setState({visible: !visible})" role="button" tabindex="0">
+    <div class="absolute-bottom" >  
+      <p class="" on="tap:AMP.setState({visible: !visible})" role="button" tabindex="0" style="margin: 0 auto; max-width: 55%;">
         <span>
           Select your country :
           <amp-img alt="Europe" src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/eu-flag.webp" width="24"
