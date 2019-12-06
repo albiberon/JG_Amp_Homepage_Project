@@ -1,33 +1,106 @@
 {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="661"}}
 {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="663"}}
 <style amp-custom>
+    @media (min-width: 800px) {
+        #reviews-carousel {
+            max-width: 70%;
+            margin: 30px auto 0;
+            height: 450px;
+        }
+    }
 
-.amp-carousel-button .amp-carousel-button-prev {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      z-index: 999;
-      background-color: rgba(0, 0, 0, .1)
+    @media (max-width: 799px) {
+        #reviews-carousel {
+            max-width: 90%;
+            margin: 30px auto 0;
+            height: 450px;
+        }
+    }
+
+    #reviews-carousel .amp-carousel-button {
+        display: none
+    }
+
+    .fa.fa-quote-left.fa-2x {
+        position: absolute;
+        left: 5px
+    }
+
+    .client-review-text {
+        font-size: 18px;
+        letter-spacing: 1.1px;
+        font-weight: 300;
+        padding: 0 8px 0 8px
+    }
+
+    .fa.fa-quote-right.fa-2x {
+        position: absolute;
+        right: 5px
+    }
+
+    .amp-col-1 {
+        width: 8.33333%;
+    }
+
+    .amp-col-10 {
+        width: 83.33333%;
+    }
+
+    .amp-col-12 {
+        width: 100%;
+    }
+
+    .flex {
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .flex-wrap {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .center {
+        text-align: center
+    }
+
+    #reviews-carousel .amp-carousel-button {
+        display: none
+    }
+
+    .client-review-text {
+        font-size: 18px;
+        letter-spacing: 1.1px;
+        font-weight: 300;
+        padding: 0 8px 0 8px
+    }
+
+    .amp-carousel-button .amp-carousel-button-prev {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, .1)
     }
 
     .amp-carousel-button .amp-carousel-button-next {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      z-index: 999;
-      background-color: rgba(0, 0, 0, .1)
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, .1)
     }
 
     .amp-carousel-button {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background-color: #4ec42587
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #4ec42587
     }
 
     @media (max-width:900px) {
         .hidden-on-mobile {
-            display: none!important;
+            display: none !important;
         }
 
         .carousel1 {
@@ -220,9 +293,8 @@
                     </div>
                     <div id="i1ttu" class="row">
                         <div id="i49n4" class="cell">
-                            <a id="i086f" style="background-color: #228600;"
-                            aria-label="View our swings"
-                            href="{{store url='climbing-frames-playhouses/swing'}}" >SHOP NOW</a>
+                            <a id="i086f" style="background-color: #228600;" aria-label="View our swings"
+                                href="{{store url='climbing-frames-playhouses/swing'}}">SHOP NOW</a>
                         </div>
                     </div>
                 </div>
@@ -230,7 +302,7 @@
                     <div id="imx4oo" class="row">
                         <div id="iyivu" class="cell">
                             <a href="{{store direct_url='climbing-frames-playhouses?filter_size_garden=88'}}"
-                            aria-label="View our our products for small gardens">
+                                aria-label="View our our products for small gardens">
                                 <amp-img src="{{media url=&quot;wysiwyg/webp-img/small_garden_category_opt.webp&quot;}}"
                                     layout="responsive" width="500" height="500"
                                     alt="Two swings for small gardens in white background">
@@ -247,8 +319,8 @@
                     </div>
                     <div id="i0quod" class="row">
                         <div id="ikdvg2" class="cell">
-                            <a style="background-color: #228600;"  id="ibsrit"
-                            aria-label="Click here to see our products for small gardens"
+                            <a style="background-color: #228600;" id="ibsrit"
+                                aria-label="Click here to see our products for small gardens"
                                 href="{{store direct_url='climbing-frames-playhouses?filter_size_garden=88'}}">SHOP
                                 NOW</a>
                         </div>
@@ -257,11 +329,12 @@
                 <div id="igz0a4" class="cell">
                     <div id="iflzm" class="row">
                         <div id="ig4gx" class="cell">
-                            <a href="{{store url='climbing-frames-playhouses/playhouses'}}" aria-label="Click here to view our play houses">
+                            <a href="{{store url='climbing-frames-playhouses/playhouses'}}"
+                                aria-label="Click here to view our play houses">
                                 <amp-img src="{{media url=&quot;wysiwyg/webp-img/playhouses_category_opt.webp&quot;}}"
                                     layout="responsive" width="500" height="500"
                                     alt="Wooden playhouse with green slide in white background">
-                                    
+
                                 </amp-img>
                             </a>
                         </div>
@@ -274,7 +347,9 @@
                     </div>
                     <div id="iy9ewg" class="row">
                         <div id="i96pzy" class="cell">
-                            <a style="background-color: #228600;" id="i8w78" href="{{store url=&quot;climbing-frames-playhouses/playhouses&quot;}}" aria-label="Click here to view our play houses">SHOP NOW</a>
+                            <a style="background-color: #228600;" id="i8w78"
+                                href="{{store url=&quot;climbing-frames-playhouses/playhouses&quot;}}"
+                                aria-label="Click here to view our play houses">SHOP NOW</a>
                         </div>
                     </div>
                 </div>
@@ -283,9 +358,9 @@
     </section>
     <section id="i1tai" class="gpd-section">
         <amp-img id="ikg357" class="commerce-hero-image"
-        src="{{media url=&quot;wysiwyg/webp-img/timber_girl_mobile_800x438_opt.webp&quot;}}" width="800"
-        height="438" layout="responsive" alt="Little girl smiling in a wooden playhouse" noloading="">
-        <div placeholder="" class="commerce-loader"></div>
+            src="{{media url=&quot;wysiwyg/webp-img/timber_girl_mobile_800x438_opt.webp&quot;}}" width="800"
+            height="438" layout="responsive" alt="Little girl smiling in a wooden playhouse" noloading="">
+            <div placeholder="" class="commerce-loader"></div>
         </amp-img>
 
         <div id="ikyg4" class="gpd-container">
@@ -311,7 +386,9 @@
                             </div>
                             <div id="ixae7y" class="row">
                                 <div id="i9d6d2" class="cell">
-                                    <a style="background-color: #228600;" id="iwmn0t" aria-label="Read more about our wood quality" href="{{store url='type-of-wood-quality'}}">READ MORE</a>
+                                    <a style="background-color: #228600;" id="iwmn0t"
+                                        aria-label="Read more about our wood quality"
+                                        href="{{store url='type-of-wood-quality'}}">READ MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -328,13 +405,14 @@
                 <div id="iu59m" class="cell">
 
                     <amp-video autoplay width="500" height="500"
-                    poster="{{media url=&quot;wysiwyg/webp-img/jg-video-poster-500x500.jpg&quot;}}"
-                    src="{{media url=&quot;wysiwyg/media/Video_Chalet_Front_Page_750pixels_3.mp4&quot;}}" layout="responsive" autoplay noaudio loop>
-                    <div fallback>
-                      <p>Your browser doesn't support HTML5 video.</p>
-                    </div>
-                  </amp-video>
-                    
+                        poster="{{media url=&quot;wysiwyg/webp-img/jg-video-poster-500x500.jpg&quot;}}"
+                        src="{{media url=&quot;wysiwyg/media/Video_Chalet_Front_Page_750pixels_3.mp4&quot;}}"
+                        layout="responsive" autoplay noaudio loop>
+                        <div fallback>
+                            <p>Your browser doesn't support HTML5 video.</p>
+                        </div>
+                    </amp-video>
+
 
                 </div>
                 <div id="i71m55" class="cell">
@@ -358,7 +436,9 @@
                             </div>
                             <div id="ig38x9" class="row">
                                 <div id="i8flov" class="cell">
-                                    <a style="background-color: #228600;" id="i0f2pa" href="{{store url='design-your-own'}}">DESIGN NOW</a>
+                                    <a style="background-color: #228600;" id="i0f2pa"
+                                        aria-label="Go to the page to design your own playground"
+                                        href="{{store url='design-your-own'}}">DESIGN NOW</a>
                                 </div>
                             </div>
                         </div>
@@ -370,9 +450,12 @@
 
 
     <section id="i1tai1" class="gpd-section">
-        <img id="ikg358"
-            src="{{media url=&quot;wysiwyg/outdoor-play-equipment-for-schools-climbing-frame-q2s_4_opt.jpg&quot;}}"
-            alt="Children playing in public playground with Jungle Gym professional playground equipment" />
+            <amp-img id="ikg358" class="commerce-hero-image"
+            src="{{media url=&quot;wysiwyg/webp-img/outdoor-play-equipment-for-schools-climbing-frame-q2s_4_opt.webp&quot;}}"
+            width="800" height="438" layout="responsive"
+            alt="Children playing in public playground with Jungle Gym professional playground equipment" noloading="">
+            <div placeholder="" class="commerce-loader"></div>
+          </amp-img>
         <div id="ikyg4" class="gpd-container">
             <div id="i7qpg8" class="row">
                 <div id="iovb9l" class="cell">
@@ -396,12 +479,18 @@
                             </div>
                             <div id="ixae7y" class="row">
                                 <div id="i9d6d2" class="cell">
-                                    <a id="iwmn0t" href="{{store url='commercial-climbing-frames'}}">SHOP NOW </a> <a
-                                        href="https://drive.google.com/file/d/1kgQnjNgHA6Y5fc6oXJnGuHTZSSb0Ffr6/view?usp=sharing"
-                                        target="_blank"> <img id="safetylogo"
-                                            src="{{media url=&quot;wysiwyg/quality-logos-mid-opt.png&quot;}}"
-                                            style="margin-left: 18px; width: 107px; margin-top: -9px;"
-                                            alt="Quality and safety icons" /> </a>
+                                    <a aria-label="Shop now" style="background-color: #228600;" id="iwmn0t"
+                                        href="{{store url=&quot;commercial-climbing-frames&quot;}}">
+                                        SHOP NOW
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1kgQnjNgHA6Y5fc6oXJnGuHTZSSb0Ffr6/view?usp=sharing"
+                                        target="_blank">
+
+                                        <amp-img width="66" height="31" layout="fixed"
+                                        src="{{media url=&quot;wysiwyg/webp-img/tuv-gs-mark.svg&quot;}}"
+                                        style="margin-bottom: -10px; margin-left: 10px;" 
+                                        alt="Quality and safety icons"/>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -412,41 +501,75 @@
             </div>
         </div>
     </section>
+    <!-- New testimony section -->
+    <section id="icabe" class="center gpd-section">
+        <amp-carousel id="reviews-carousel" layout="responsive" width="550" height="250" type="slides" controls autoplay
+            loop delay="6000">
 
-    <section id="icabe" class="gpd-section">
-        <div id="igsra" class="gpd-container">
-            <div id="i7hq4f" class="row">
-                <div id="iecm5h" class="cell">
-                    <img id="ic1g1f" src="{{media url=&quot;wysiwyg/tuxpi.com.1553600863.jpg&quot;}}" alt="" />
+            <div class="slide" style="text-align: center; padding: 1rem 1rem 2em 1rem;">
+                <div style=" padding: 30px 0 10px 0; display: block; ">
+                    <amp-img
+                        src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/elizabeth-junglegym-client.webp"
+                        layout="fixed" width="150" height="150" alt="Jungle Gym Client Photo">
+                    </amp-img>
                 </div>
-            </div>
-            <div id="imqplk" class="row">
-                <div id="iz6gu7" class="cell">
-                    <div id="iyawhk" class="row">
-                        <div id="iyytcb" class="cell">
-                            <img id="i1g4r2" src="{{media url=&quot;wysiwyg/comma_1.png&quot;}}"
-                                alt="Double quote symbol" />
-                        </div>
-                        <div id="ijwsfk" class="cell">
-                            <div id="ij0de7">The kids ABSOLUTELY LOVE IT! I am now the 'best mummy ever'. I would
-                                recommend it to anyone. <br>
-                                So happy with this climbing frame!
-                            </div>
-                        </div>
-                        <div id="iepeec" class="cell">
-                            <img id="ic4bf5" src="{{media url=&quot;wysiwyg/comma_2.png&quot;}}"
-                                alt="Double quote symbol" />
-                        </div>
+                <div class="flex flex-wrap col-12">
+                    <div class="amp-col-1"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+                    <div class="amp-col-10">
+                        <p class="client-review-text">
+                            <i> I was a bit sceptical on spending this amount at first,
+                                but when I saw the quality of the climbing frame, it really speaks for itself,
+                                these things will last you double the 10 year guarantee you get on them.
+                                The kids ABSOLUTELY LOVE IT! I am now the 'best mummy ever'.
+                                So happy with this climbing frame, I would recommend it to anyone.</i> <br><br>
+                            Elizabeth, mom of Emma and Lewis
+                        </p>
                     </div>
+                    <div class="amp-col-1"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <div id="i5oplw" class="row">
-                <div id="iwtnvt" class="cell">
-                    <div id="ibva4g">Elizabeth, mom of Emma and Lewis
+
+            <div class="slide" style="text-align: center;">
+                <div style=" padding: 30px 0 10px 0; display: block;">
+                    <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/sally-junglegym-client.webp"
+                        layout="fixed" width="150" height="150" alt="Jungle Gym Client Photo">
+                    </amp-img>
+                </div>
+                <div class="flex flex-wrap amp-col-12">
+                    <div class="amp-col-1"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+                    <div class="amp-col-10">
+                        <p class="client-review-text">
+                            <i> I was a bit sceptical on spending this amount at first, but when I saw the quality of
+                                the climbing frame, it really speaks for itself, these things will last you double the 10 year guarantee you
+                                get on them. The kids ABSOLUTELY LOVE IT! I am now the 'best mummy ever'. So happy with this climbing
+                                frame, I would recommend it to anyone.</i> <br><br>
+                            Sally
+                        </p>
                     </div>
+                    <div class="amp-col-1"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
                 </div>
             </div>
-        </div>
+
+            <div class="slide" style="text-align: center;">
+                <div style=" padding: 30px 0 10px 0; display: block; ">
+                    <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/hans-junglegym-client.webp"
+                        layout="fixed" width="150" height="150" alt="Jungle Gym Client Photo">
+                    </amp-img>
+                </div>
+                <div class="flex flex-wrap amp-col-12">
+                    <div class="amp-col-1"><i class="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+                    <div class="amp-col-10">
+                        <p class="client-review-text">
+                            <i> Has built up very well thanks to the super construction manual, as well as the
+                                additional parts such as screws, drills and ground anchoring were there. The tower has become beautiful.
+                                I can only recommend.</i> <br><br>
+                            Hans, Vater von Leonie und Marko
+                        </p>
+                    </div>
+                    <div class="amp-col-1"><i class="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
+                </div>
+            </div>
+        </amp-carousel>
     </section>
 
     <section id="i4jllu" class="gpd-section">
@@ -533,33 +656,53 @@
         <div id="iff2r" class="gpd-container">
             <div id="i4xw24" class="row">
                 <div id="i0qeyc" class="cell">
-                    <div id="ihxqrj"><a href="/reviews">Happy customers all over the world
+                    <div id="ihxqrj"><a href="{{config path=&quot;web/secure/base_url&quot;}}reviews" aria-label="Reviews section">Happy customers all over the world
                     </div>
                 </div>
             </div>
             <div id="iw5sgh" class="row">
                 <div id="ipiuvd" class="cell">
-                    <div id="idt89j"> <a href="/reviews" style="
-    font-size: 22px;"> View more #JungleGym stories <u> here </u></a>
+                    <div id="idt89j"> View <a href="{{config path=&quot;web/secure/base_url&quot;}}reviews" aria-label="Reviews section" style="
+    font-size: 22px;"> <u> more reviews</u> about #JungleGym</a>
                     </div>
                 </div>
             </div>
             <div id="i2q2rd" class="row">
-                <div id="iv5n5v" class="cell"><a href="/reviews"><img id="iw3gcq"
-                            src="{{media url=&quot;wysiwyg/300x300_social_images__0005_Background_opt.jpg&quot;}}"
-                            alt="Wooden playtower with purple slide swings and climbing wall" /></a></div>
-                <div id="i663hu" class="cell"><a href="/reviews"><img id="i6vnja"
-                            src="{{media url=&quot;wysiwyg/300x300_social_images__0003_CXL_2Swing_opt.jpg&quot;}}"
-                            alt="Wooden playhouse with blue slide swings and sandpit" /></a></div>
-                <div id="ij7n0l" class="cell"><a href="/reviews"><img id="iivh3d"
-                            src="{{media url=&quot;wysiwyg/300x300_social_images__0001_cubby_climb_opt.jpg&quot;}}"
-                            alt="Wooden playtower with climbing nets" /></a></div>
-                <div id="il27ma" class="cell"><a href="/reviews"><img id="itkdmr"
-                            src="{{media url=&quot;wysiwyg/300x300_social_images__0000_Chalet_MM_2Swing_opt.jpg&quot;}}"
-                            alt="Wooden playtower with yellow slide and red swings" /></a></div>
-                <div id="ij31pk" class="cell"><a href="/reviews"><img id="i8o2nq"
-                            src="{{media url=&quot;wysiwyg/300x300_social_images__0004_chalet_phm_climb_opt.jpg&quot;}}"
-                            alt="Wooden playtower with purple slide, climbing wall and swings" /></a></div>
+                <div id="iv5n5v" class="cell" style="margin-right: 7px;">
+                    <a href="{{config path=&quot;web/secure/base_url&quot;}}reviews" aria-label="Reviews section">
+                        <amp-img src="{{media url=&quot;wysiwyg/300x300_social_images__0005_Background_opt.jpg&quot;}}"
+                        layout="responsive" width="90" height="90" alt="Wooden playtower with purple slide swings and climbing wall">
+                      </amp-img>
+                    </a>
+                </div>
+                <div id="i663hu" class="cell" style="margin-right: 7px;">
+                    <a href="{{config path=&quot;web/secure/base_url&quot;}}reviews" aria-label="Reviews section">
+                            <amp-img src="{{media url=&quot;wysiwyg/300x300_social_images__0003_CXL_2Swing_opt.jpg&quot;}}"
+                            layout="responsive" width="90" height="90" alt="Wooden playhouse with blue slide swings and sandpit">
+                          </amp-img>
+                    </a>
+                </div>
+                <div id="ij7n0l" class="cell" style="margin-right: 7px;">
+                    <a href="{{config path=&quot;web/secure/base_url&quot;}}reviews" aria-label="Reviews section">
+                            <amp-img src="{{media url=&quot;wysiwyg/300x300_social_images__0001_cubby_climb_opt.jpg&quot;}}"
+                            layout="responsive" width="90" height="90" alt="Wooden playtower with climbing nets">
+                          </amp-img>
+                    </a>
+                </div>
+                <div id="il27ma" class="cell" style="margin-right: 7px;">
+                    <a href="{{config path=&quot;web/secure/base_url&quot;}}reviews" aria-label="Reviews section">
+                            <amp-img src="{{media url=&quot;wysiwyg/300x300_social_images__0000_Chalet_MM_2Swing_opt.jpg&quot;}}"
+                            layout="responsive" width="90" height="90" alt="Wooden playtower with yellow slide and red swings">
+                          </amp-img>
+                    </a>
+                </div>
+                <div id="ij31pk" class="cell">
+                    <a href="{{config path=&quot;web/secure/base_url&quot;}}reviews" aria-label="Reviews section">
+                            <amp-img src="{{media url=&quot;wysiwyg/300x300_social_images__0004_chalet_phm_climb_opt.jpg&quot;}}"
+                            layout="responsive" width="90" height="90" alt="Wooden playtower with purple slide, climbing wall and swings">
+                          </amp-img>
+                    </a>
+                </div>
             </div>
         </div>
 </div>
