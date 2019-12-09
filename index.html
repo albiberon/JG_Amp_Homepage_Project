@@ -24,9 +24,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
   <style amp-custom>
-     @font-face {
+    @font-face {
       font-family: Luma-Icons;
       src: url(fonts/Luma-Icons.woff2)
     }
@@ -1819,7 +1820,7 @@
       margin-right: 8px;
       fill: #4ec425;
       min-width: 25px;
-      min-height:25px;
+      min-height: 25px;
     }
 
     .usp-container {
@@ -1854,7 +1855,7 @@
       font-weight: 300;
       font-size: 18px;
       text-align: left;
-      margin-left:-20px;
+      margin-left: -20px;
     }
 
     .content-list li {
@@ -2319,9 +2320,9 @@
       font-weight: 300
     }
 
-    .social-h4{
-      font-weight: 700; 
-      margin: 0 auto; 
+    .social-h4 {
+      font-weight: 700;
+      margin: 0 auto;
       max-width: 60%;
     }
 
@@ -2329,25 +2330,32 @@
       margin-left: 20%;
     }
 
-    @media (min-width:300px) {
-      #reviews-carousel {
-        height: 520px
-      }
-    }
 
-    @media (max-width:550px){
-      .social-section{
-        margin: 0 auto; 
+
+    @media (max-width:550px) {
+      .social-section {
+        margin: 0 auto;
         width: 100%;
       }
 
-      .footer.links{
+      .footer.links {
         margin-left: 10%;
       }
 
       /* .social-section .social-h4{
       margin: 0 auto; max-width: 60%;
     } */
+
+    }
+
+    @media (min-width:300px) {
+      #reviews-carousel {
+        height: 530px; 
+        font-size:12px;
+      }
+      .client-review-text{
+        font-size: 16px;
+      }
 
     }
 
@@ -2440,22 +2448,23 @@
       margin-top: 45px;
     }
 
-    .climbing-frames-content-details{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
-    padding: 0 1rem;
-    font-weight: 300;
-    margin: 10px auto 0 auto;
+    .climbing-frames-content-details {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 22px;
+      padding: 0 1rem;
+      font-weight: 300;
+      margin: 10px auto 0 auto;
     }
 
-    .footer-h4::before{
+    .footer-h4::before {
       content: "\e622";
       font-weight: 300;
       font-family: "luma-icons";
       font-size: 0.7em;
       padding-right: 10px;
     }
-    .social-h4::before{
+
+    .social-h4::before {
       content: "";
       font-weight: 300;
       font-family: "luma-icons";
@@ -2464,16 +2473,81 @@
       margin-bottom: 8px;
     }
 
-    .company-logo{
-      margin-top:-2px;
+    .company-logo {
+      margin-top: -2px;
     }
 
-    .chalet-video{
+    .chalet-video {
       margin-top: 20px;
     }
-  
- </style>
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </style>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
   <link rel="canonical" href="/index.html" />
   <title>Wooden playground equipment for your garden | Jungle Gym®</title>
 </head>
@@ -2733,13 +2807,14 @@
   </div>
 
 
-  <header class="ampstart-headerbar flex flex-wrap px1 col-12" style="justify-content: space-between; padding-top: 2em; padding-bottom: 2em;" >
+  <header class="ampstart-headerbar flex flex-wrap px1 col-12"
+    style="justify-content: space-between; padding-top: 2em; padding-bottom: 2em;">
     <div role="button" aria-label="open sidebar" on="tap:sidebar.toggle" tabindex="0"
       class="ampstart-navbar-trigger col-1">☰
     </div>
     <div class="col-8 flex flex-wrap justify-center">
-      <amp-img class="company-logo" src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/jg-logo.svg" width="220" height="40"
-        alt="Jungle Gym - Backyard Playgrounds"></amp-img>
+      <amp-img class="company-logo" src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/jg-logo.svg"
+        width="220" height="40" alt="Jungle Gym - Backyard Playgrounds"></amp-img>
     </div>
     <div class="searchme search-button col-1" role="button" tabindex="0" aria-label="Search button"
       on="tap:AMP.setState({seen: !seen})"><label class="label" for="search" data-role="minisearch-label"></label></div>
@@ -2762,21 +2837,17 @@
     <section class="commerce-hero-content-wrapper center">
       <a href="https://www.junglegym.com/sale" aria-label="Check out the articles in SALE section"
         class="text-decoration-none block">
-        <amp-img class="commerce-hero-image" src="img/jg-holiday-giveaway-en-m.webp"
-          width="750" height="1031" layout="responsive" alt="Holiday Season Sale Banner" noloading=""
-          media="(max-width: 52.06rem)">
-              <amp-img fallback class="commerce-hero-image" src="img/jg-holiday-giveaway-en-m.jpg"
-              width="750" height="1031" layout="responsive" alt="Holiday Season Sale Banner" noloading=""
-              media="(max-width: 52.06rem)">
-            </amp-img>
+        <amp-img class="commerce-hero-image" src="img/jg-holiday-giveaway-en-m.webp" width="750" height="1031"
+          layout="responsive" alt="Holiday Season Sale Banner" noloading="" media="(max-width: 52.06rem)">
+          <amp-img fallback class="commerce-hero-image" src="img/jg-holiday-giveaway-en-m.jpg" width="750" height="1031"
+            layout="responsive" alt="Holiday Season Sale Banner" noloading="" media="(max-width: 52.06rem)">
+          </amp-img>
         </amp-img>
-        <amp-img class="commerce-hero-image" src="img/jg-holiday-giveaway-en.webp"
-          width="1918" height="600" layout="responsive" alt="Holiday Season Sale Banner" noloading=""
-          media="(min-width: 52.07rem)">
-              <amp-img fallback class="commerce-hero-image" src="img/jg-holiday-giveaway-en-m.jpg"
-              width="1918" height="600" layout="responsive" alt="Holiday Season Sale Banner" noloading=""
-              media="(min-width: 52.07rem)">
-            </amp-img>
+        <amp-img class="commerce-hero-image" src="img/jg-holiday-giveaway-en.webp" width="1918" height="600"
+          layout="responsive" alt="Holiday Season Sale Banner" noloading="" media="(min-width: 52.07rem)">
+          <amp-img fallback class="commerce-hero-image" src="img/jg-holiday-giveaway-en-m.jpg" width="1918" height="600"
+            layout="responsive" alt="Holiday Season Sale Banner" noloading="" media="(min-width: 52.07rem)">
+          </amp-img>
         </amp-img>
       </a>
       <div
@@ -3132,7 +3203,8 @@
 
   <section class="commerce-hero-content-wrapper center overflow-hidden">
     <div
-      class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0" style="padding: 1.5rem 1rem 2em 1rem;">
+      class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
+      style="padding: 1.5rem 1rem 2em 1rem;">
       <div class="commerce-hero-align md-mx-auto col-12">
         <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
           Happy customers all over the world
@@ -3270,8 +3342,9 @@
       </div>
 
     </div>
-    <div class="absolute-bottom" >  
-      <p class="" on="tap:AMP.setState({visible: !visible})" role="button" tabindex="0" style="margin: 0 auto; max-width: 55%;">
+    <div class="absolute-bottom">
+      <p class="" on="tap:AMP.setState({visible: !visible})" role="button" tabindex="0"
+        style="margin: 0 auto; max-width: 55%;">
         <span>
           Select your country :
           <amp-img alt="Europe" src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/eu-flag.webp" width="24"
