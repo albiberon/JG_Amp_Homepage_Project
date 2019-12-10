@@ -2362,13 +2362,17 @@
       }
     }
 
-    @media (min-width:768px) {
+
+    @media (min-width:800px) {
+
+      .absolute-bottom {
+        padding-left: 32.5%!important;
+      }
+
       #reviews-carousel {
         height: 350px
       }
-    }
 
-    @media (min-width:900px) {
       #reviews-carousel {
         height: 330px
       }
@@ -2389,9 +2393,17 @@
         font-weight: 700;
         padding: 10px 10% 10px 30% !important;
       }
+
       .footer.links {
         padding-left: 20%!important;
       }
+
+      .footer-ul{
+      list-style: none; 
+      margin: 0 auto; 
+      padding-left: 32.5%!important; 
+      padding-top: 7px;
+    }
 
     }
 
@@ -2458,6 +2470,7 @@
       bottom: 0;
       background-color: #f4f4f4;
       color: black;
+      padding-left: 12.5%;
     }
 
     .climbing-frames-content {
@@ -2496,6 +2509,18 @@
     .chalet-video {
       margin-top: 20px;
     }
+
+    .col-1-5 {
+      width: 20%;
+    }
+
+    .footer-ul{
+      list-style: none; 
+      margin: 0 auto; 
+      padding-left: 12.5%; 
+      padding-top: 7px;
+    }
+
   </style>
   <style amp-boilerplate>
     body {
@@ -2553,17 +2578,6 @@
       to {
         visibility: visible
       }
-    }
-
-    .col-1-5 {
-      width: 20%;
-    }
-
-    .footer-ul{
-      list-style: none; 
-      margin: 0 auto; 
-      padding-left: 12.5%; 
-      padding-top: 7px;
     }
 
   </style><noscript>
@@ -3202,7 +3216,6 @@
     </amp-carousel>
   </section>
 
-
   <section class="commerce-hero-content-wrapper center overflow-hidden">
     <div
       class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
@@ -3274,27 +3287,6 @@
                 alt="Wooden playtower with purple slide, climbing wall and swings"></amp-img>
             </a>
           </amp-carousel>
-
-
-          <!-- <div class="col-4" style="margin: 0 3px;">
-            <amp-img
-              src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0001_cubby_climb_opt.webp"
-              layout="responsive" width="200" height="200" alt="Wooden playtower with climbing nets">
-            </amp-img>
-          </div>
-          <div class="col-4" style="margin: 0 3px;">
-            <amp-img
-              src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0005_Background_opt.webp"
-              layout="responsive" width="200" height="200" alt="Wooden playtower with purple slide and swings">
-            </amp-img>
-          </div>
-          <div class="col-4" style="margin: 0 3px;">
-            <amp-img
-              src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0000_Chalet_MM_2Swing_opt.webp"
-              layout="responsive" width="200" height="200"
-              alt="Wooden playtower with yellow slide, sand pit and two swings">
-            </amp-img>
-          </div> -->
         </div>
       </div>
     </div>
@@ -3401,7 +3393,7 @@
     </div>
     <div class="absolute-bottom">
       <p class="" on="tap:AMP.setState({visible: !visible})" role="button" tabindex="0"
-        style="margin: 0 auto; max-width: 55%;">
+        style="margin: 0 auto;">
         <span>
           Select your country :
           <amp-img alt="Europe" src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/eu-flag.webp" width="24"
@@ -3411,4 +3403,5 @@
     </div>
   </footer>
 </body>
+
 </html>
