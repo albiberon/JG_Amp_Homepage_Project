@@ -2323,13 +2323,13 @@
     .social-h4 {
       font-weight: 700;
       margin: 0 auto;
-      max-width: 60%;
+      margin-left: 0;
+      padding-top: 5px;
     }
 
     .footer.links {
-      margin-left: 20%;
+      margin-left: 12.5%;
     }
-
 
 
     @media (max-width:550px) {
@@ -2342,18 +2342,15 @@
         margin-left: 10%;
       }
 
-      /* .social-section .social-h4{
-      margin: 0 auto; max-width: 60%;
-    } */
-
     }
 
     @media (min-width:300px) {
       #reviews-carousel {
-        height: 530px; 
-        font-size:12px;
+        height: 530px;
+        font-size: 12px;
       }
-      .client-review-text{
+
+      .client-review-text {
         font-size: 16px;
       }
 
@@ -2375,6 +2372,27 @@
       #reviews-carousel {
         height: 330px
       }
+
+      .social-h4 {
+        font-weight: 700;
+        margin: 0 auto;
+        padding-left: 30% !important;
+        padding-top: 5px;
+      }
+
+      .footer-accordion section h4 {
+        background-color: unset;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 18px;
+        border: unset;
+        font-weight: 700;
+        padding: 10px 10% 10px 30% !important;
+      }
+      .footer.links {
+        padding-left: 20%!important;
+      }
+
     }
 
     a {
@@ -2412,9 +2430,6 @@
       padding: 10px 10% 10px 10%;
     }
 
-    .social-section h4 {
-      padding-top: 5px;
-    }
 
     .top-usb-section {
       padding-top: 35px;
@@ -2540,11 +2555,17 @@
       }
     }
 
-    .col-1-5{
+    .col-1-5 {
       width: 20%;
     }
-    
 
+    .footer-ul{
+      list-style: none; 
+      margin: 0 auto; 
+      padding-left: 12.5%; 
+      padding-top: 7px;
+    }
+    
   </style><noscript>
     <style amp-boilerplate>
       body {
@@ -3221,45 +3242,38 @@
         </p>
         <div class="flex col-12 md-mx-auto" style=" margin: 40px auto 30px auto;">
 
-              <amp-carousel height="400"
-                layout="fixed-height"
-                type="carousel">
-                <a href="https://www.junglegym.com/reviews">
-                  <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0001_cubby_climb_opt.webp"
-                    href="https://www.junglegym.com/reviews"
-                    width="400"
-                    height="400"
-                    alt="Wooden playtower with climbing nets"></amp-img>
-                </a>
-                <a href="https://www.junglegym.com/reviews">
-                  <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0003_CXL_2Swing_opt.webp"
-                    href="https://www.junglegym.com/reviews"
-                    width="400"
-                    height="400"
-                    alt="Wooden playhouse with blue slide swings and sandpit"></amp-img>
-                </a>
-                <a href="https://www.junglegym.com/reviews">
-                  <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0005_Background_opt.webp"
-                    href="https://www.junglegym.com/reviews"
-                    width="400"
-                    height="400"
-                    alt="Wooden playtower with purple slide and swings"></amp-img>
-                </a>
-                <a href="https://www.junglegym.com/reviews">
-                  <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0000_Chalet_MM_2Swing_opt.webp"
-                    href="https://www.junglegym.com/reviews"
-                    width="400"
-                    height="400"
-                    alt="Wooden playtower with yellow slide, sand pit and two swings"></amp-img>
-                </a>
-                <a href="https://www.junglegym.com/reviews">
-                  <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0004_chalet_phm_climb_opt.webp"
-                    href="https://www.junglegym.com/reviews"
-                    width="400"
-                    height="400"
-                    alt="Wooden playtower with purple slide, climbing wall and swings"></amp-img>
-                </a>
-              </amp-carousel>
+          <amp-carousel height="400" layout="fixed-height" type="carousel">
+            <a href="https://www.junglegym.com/reviews">
+              <amp-img
+                src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0001_cubby_climb_opt.webp"
+                href="https://www.junglegym.com/reviews" width="400" height="400"
+                alt="Wooden playtower with climbing nets"></amp-img>
+            </a>
+            <a href="https://www.junglegym.com/reviews">
+              <amp-img
+                src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0003_CXL_2Swing_opt.webp"
+                href="https://www.junglegym.com/reviews" width="400" height="400"
+                alt="Wooden playhouse with blue slide swings and sandpit"></amp-img>
+            </a>
+            <a href="https://www.junglegym.com/reviews">
+              <amp-img
+                src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0005_Background_opt.webp"
+                href="https://www.junglegym.com/reviews" width="400" height="400"
+                alt="Wooden playtower with purple slide and swings"></amp-img>
+            </a>
+            <a href="https://www.junglegym.com/reviews">
+              <amp-img
+                src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0000_Chalet_MM_2Swing_opt.webp"
+                href="https://www.junglegym.com/reviews" width="400" height="400"
+                alt="Wooden playtower with yellow slide, sand pit and two swings"></amp-img>
+            </a>
+            <a href="https://www.junglegym.com/reviews">
+              <amp-img
+                src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0004_chalet_phm_climb_opt.webp"
+                href="https://www.junglegym.com/reviews" width="400" height="400"
+                alt="Wooden playtower with purple slide, climbing wall and swings"></amp-img>
+            </a>
+          </amp-carousel>
 
 
           <!-- <div class="col-4" style="margin: 0 3px;">
@@ -3317,7 +3331,7 @@
     <amp-accordion class="footer-accordion" animate expand-single-section style="margin: 0 auto;">
       <section>
         <h4 class="footer-h4" style="font-weight: 700; border-bottom: 0.5px solid #47515d">Customer service</h4>
-        <ul style="list-style: none; margin: 0 auto; padding-left: 90px; padding-top: 7px;">
+        <ul class="footer-ul" style="list-style: none; margin: 0 auto; padding-left: 12.5%; padding-top: 7px;">
           <li class="folding-footer-item">
             <a href="https://www.junglegym.com/contact-us">Customer service</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/contact-us">Contact</a></li>
@@ -3330,18 +3344,18 @@
       </section>
       <section>
         <h4 class="footer-h4" style="font-weight: 700; border-bottom: 0.5px solid #47515d">Order</h4>
-        <ul style="list-style: none; margin: 0 auto; padding-left: 90px; padding-top: 7px;">
+        <ul class="footer-ul" style="list-style: none; margin: 0 auto; padding-left: 12.5%; padding-top: 7px;">
           <li class="folding-footer-item"><a href="https://www.junglegym.com/order">Order</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/payment">Payment</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/delivery">Delivery</a></li>
-          <li class="folding-footer-item"><a href="https://www.junglegym.com/assembly">Assembly service/a></li>
+          <li class="folding-footer-item"><a href="https://www.junglegym.com/assembly">Assembly service</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/accessories/spare-parts">Spare parts</a>
           </li>
         </ul>
       </section>
       <section>
         <h4 class="footer-h4" style="font-weight: 700; border-bottom: 0.5px solid #47515d">Safety and quality</h4>
-        <ul style="list-style: none; margin: 0 auto; padding-left: 90px; padding-top: 7px;">
+        <ul class="footer-ul">
           <li class="folding-footer-item"><a href="https://www.junglegym.com/assembly">Assembly</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/assembly">Manuals</a></li>
           <li class="folding-footer-item"><a href="https://www.junglegym.com/type-of-wood-quality">Quality of wood</a>
