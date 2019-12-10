@@ -13,7 +13,7 @@
   <meta name="amp-google-client-id-api" content="googleanalytics" />
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
   <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
@@ -3210,7 +3210,7 @@
   <section class="commerce-hero-content-wrapper center overflow-hidden">
     <div
       class="commerce-hero-content commerce-hero-content-theme-secondary flex justify-center flex-column md-mx-auto md-p0"
-      style="padding: 1.5rem 1rem 2em 1rem;">
+      style="padding: 1.5rem 0 2em 0;">
       <div class="commerce-hero-align md-mx-auto col-12">
         <h2 class="commerce-hero-content-title h2 md-h1 caps md-mb2 md-pl4">
           Happy customers all over the world
@@ -3218,8 +3218,27 @@
         <p class="commerce-hero-content-body" style="margin-top: 10px; font-size: 26px;">
           View <a href="https://www.junglegym.com/reviews"><u>more reviews</u> about #JungleGym</a>
         </p>
-        <div class="flex col-12 md-mx-auto" style=" margin: 40px auto 30px auto; width: 90%;">
-          <div class="col-4" style="margin: 0 3px;">
+        <div class="flex col-12 md-mx-auto" style=" margin: 40px auto 30px auto;">
+
+              <amp-carousel height="400"
+                layout="fixed-height"
+                type="carousel">
+                <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0001_cubby_climb_opt.webp"
+                  width="400"
+                  height="400"
+                  alt="a sample image"></amp-img>
+                <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0005_Background_opt.webp"
+                  width="400"
+                  height="400"
+                  alt="another sample image"></amp-img>
+                <amp-img src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0000_Chalet_MM_2Swing_opt.webp"
+                  width="400"
+                  height="400"
+                  alt="and another sample image"></amp-img>
+              </amp-carousel>
+
+
+          <!-- <div class="col-4" style="margin: 0 3px;">
             <amp-img
               src="https://albiberon.github.io/JG_Amp_Homepage_Project/img/300x300_social_images__0001_cubby_climb_opt.webp"
               layout="responsive" width="200" height="200" alt="Wooden playtower with climbing nets">
@@ -3237,7 +3256,7 @@
               layout="responsive" width="200" height="200"
               alt="Wooden playtower with yellow slide, sand pit and two swings">
             </amp-img>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
